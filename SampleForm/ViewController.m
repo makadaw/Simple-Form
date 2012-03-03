@@ -19,6 +19,7 @@
 #import "NumericField.h"
 #import "DateTimePicker.h"
 #import "DateTimeField.h"
+#import "CurrencyField.h"
 
 @implementation ViewController
 
@@ -54,19 +55,44 @@
     
     NumericField *nf = [[NumericField alloc] init];
     nf.titleLabel.text = @"Numeric field";
-    nf.decimalPartSize = 2;
+    nf.decimalPartSize = 10;
     nf.fieldName = @"nf1";
     nf.decimalSeparator = @",";
     [form addField:nf];
     [nf release];
     
+    CurrencyField *cf = [[CurrencyField alloc] initWithFieldName:@"currency"];
+    cf.titleLabel.text = @"Currency";
+    cf.decimalSeparator = @".";
+    cf.currencySymbol = @"$";
+    [form addField:cf];
+    [cf release];
+    
     DateTimePicker *dtp = [[DateTimePicker alloc] init];
     
     DateTimeField *dtf = [[DateTimeField alloc] init];
     dtf.dataSelect = dtp;
+    dtf.fieldName = @"datetime";
     [dtp release];
-    dtf.backgroundColor = [UIColor redColor];
     dtf.titleLabel.text = @"Date Time Picker";
+    [form addField:dtf];
+    [dtf release];
+    
+    dtf = [[DateTimeField alloc] init];
+    dtf.dataSelect = dtp;
+    [dtp release];
+    dtf.titleLabel.text = @"Date Picker";
+    dtf.fieldName = @"date";
+    dtf.fieldMode = ITDate;
+    [form addField:dtf];
+    [dtf release];
+    
+    dtf = [[DateTimeField alloc] init];
+    dtf.dataSelect = dtp;
+    [dtp release];
+    dtf.titleLabel.text = @"Time Picker";
+    dtf.fieldName = @"time";
+    dtf.fieldMode = ITTime;
     [form addField:dtf];
     [dtf release];
     
@@ -150,8 +176,8 @@
 
 - (void)collectValues
 {
-    NSDictionary *dict = [form formValues];
-    int s= 0 ;
+    NSDictionary *values = [form formValues];
+    NSLog(@"Values %@", values);
 }
 
 @end

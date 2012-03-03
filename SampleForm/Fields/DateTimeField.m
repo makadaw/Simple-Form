@@ -20,7 +20,6 @@
     self.pickerButton.backgroundColor = [UIColor greenColor];
     
     self.valueLabel.frame = CGRectMake(10, 40, self.bounds.size.width-70, 30);
-    self.valueLabel.text = @"text";
 }
 
 @end

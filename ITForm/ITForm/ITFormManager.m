@@ -67,9 +67,9 @@
         if (field.isEditable && !field.isHidden) {
             NSString *v = [field fieldValue];
             if (v == nil) {
-                [tmpData setObject:[NSNull null] forKey:field.fieldName];
+                [tmpData setObject:@"" forKey:field.fieldName];
             } else {
-                [tmpData setObject:[field fieldValue] forKey:field.fieldName];
+                [tmpData setObject:v forKey:field.fieldName];
             }
         }
     }

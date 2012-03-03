@@ -34,11 +34,12 @@ typedef enum {
 @property (retain) NSString *dateTimeFormat; // 1/18/2012 2:24:59 PM
 @property (retain) NSString *dateFormat; // 1/19/2012
 @property (retain) NSString *timeFormat; // 2:00:00 AM
-@property (retain) NSString *returnFormat;
 
 @property (nonatomic, retain) NSDate *minimumDate;
 @property (nonatomic, retain) NSDate *maximumDate;
 
 
+- (void)setFieldValue:(NSString *)newValue withFormat:(NSString*)format;
+- (NSString*)currentFormat;
 
 @end

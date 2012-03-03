@@ -36,6 +36,7 @@
 		045689F21501581F00733419 /* DateTimeField.m in Sources */ = {isa = PBXBuildFile; fileRef = 045689F11501581E00733419 /* DateTimeField.m */; };
 		045689F51501590500733419 /* DateTimePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 045689F41501590500733419 /* DateTimePicker.m */; };
 		045689F715021C5700733419 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 045689F615021C5700733419 /* README */; };
+		04568A0515022C6800733419 /* CurrencyField.m in Sources */ = {isa = PBXBuildFile; fileRef = 04568A0415022C6800733419 /* CurrencyField.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +112,8 @@
 		045689F31501590500733419 /* DateTimePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateTimePicker.h; sourceTree = "<group>"; };
 		045689F41501590500733419 /* DateTimePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateTimePicker.m; sourceTree = "<group>"; };
 		045689F615021C5700733419 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = SOURCE_ROOT; };
+		04568A0315022C6800733419 /* CurrencyField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrencyField.h; sourceTree = "<group>"; };
+		04568A0415022C6800733419 /* CurrencyField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrencyField.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -261,6 +264,8 @@
 				045689F11501581E00733419 /* DateTimeField.m */,
 				045689F31501590500733419 /* DateTimePicker.h */,
 				045689F41501590500733419 /* DateTimePicker.m */,
+				04568A0315022C6800733419 /* CurrencyField.h */,
+				04568A0415022C6800733419 /* CurrencyField.m */,
 			);
 			path = Fields;
 			sourceTree = "<group>";
@@ -413,6 +418,7 @@
 				045689E715013D6D00733419 /* NumericField.m in Sources */,
 				045689F21501581F00733419 /* DateTimeField.m in Sources */,
 				045689F51501590500733419 /* DateTimePicker.m in Sources */,
+				04568A0515022C6800733419 /* CurrencyField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
