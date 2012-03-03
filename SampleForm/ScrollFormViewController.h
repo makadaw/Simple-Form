@@ -15,5 +15,6 @@
 }
 
 - (void)collectValues;
+- (void)validateForm:(id)sender;
 
 @end

@@ -10,12 +10,18 @@
 #import "ITFieldResponderDelegate.h"
 #import "ITFieldDelegate.h"
 
+#define ITFIELD_ERROR_VIEW 255
+
+@class ITBaseValidator;
+
 @interface ITField : UIView
 
 @property (nonatomic, retain) NSString *fieldName;
 @property (assign) id<ITFieldResponderDelegate> responderDelegate;
 @property (assign) id<ITFieldDelegate> delegate;
 @property (nonatomic, getter = isEditable) BOOL editable;
+
+@property (readonly, assign) NSMutableArray *validatorsList;
 
 - (id)initWithFieldName:(NSString*)theFieldName;
 
@@ -27,5 +33,10 @@
 - (NSString *)fieldValue;
 
 - (BOOL)validate:(NSError **)error;
+- (UIView*)errorView;
+- (void)showErrorView;
+- (void)hideErrorView;
+- (void)addValidator:(ITBaseValidator*)validator;
+- (void)removeValidator:(ITBaseValidator*)validator;
 
 @end

@@ -7,20 +7,24 @@
 //
 
 #import "ITField.h"
+#import "ITBaseValidator.h"
 
 @interface ITField()
-
+@property (readwrite, assign) NSMutableArray *validatorsList;
 @end
 
 @implementation ITField
 @synthesize fieldName, editable;
 @synthesize responderDelegate, delegate;
+@synthesize validatorsList;
 
+#pragma marl - Lifecycle
 - (id)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
         self.editable = YES;
+        self.validatorsList = [[NSMutableArray alloc] init];
         [self postInit];
     }
     return self;
@@ -37,6 +41,7 @@
 
 - (void)dealloc
 {
+    [self.validatorsList release];
     [self.fieldName release];
     [super dealloc];
 }
@@ -51,6 +56,7 @@
     
 }
 
+#pragma mark - View set up
 - (void)setFrame:(CGRect)frame
 {
     float height = [self fieldHeight];
@@ -65,6 +71,7 @@
     return 88.0;
 }
 
+#pragma mark - Values
 - (void)setFieldValue:(NSString *)newValue
 {
     NSAssert(YES, @"Implement in child classes");
@@ -76,12 +83,7 @@
     return @"";
 }
 
-- (BOOL)validate:(NSError **)error
-{
-    return YES;
-}
-
-//Touches
+#pragma mark - Touches
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
     if (responderDelegate != nil) {
@@ -89,6 +91,7 @@
     }
 }
 
+//Responder chain
 - (BOOL)becomeFirstResponder
 {
     return NO;
@@ -113,5 +116,60 @@
 {
     return NO;
 }
+
+#pragma mark - Validate part
+- (BOOL)validate:(NSError **)error
+{
+    BOOL isValid = YES;
+    NSString *errorStr = @"";
+    for (NSInteger i = 0; i < [self.validatorsList count]; i++) {
+        ITBaseValidator *validator = [self.validatorsList objectAtIndex:i];
+        if (![validator checkValue:[self fieldValue]]) {
+            isValid = NO;
+            errorStr = [errorStr stringByAppendingFormat:@"%@ \n", validator.lastError];
+        }
+    }
+    if (isValid) {
+        [self hideErrorView];
+    } else {
+        *error = [NSError errorWithDomain:@"ITField" code:1 userInfo:[NSDictionary dictionaryWithObject:errorStr forKey:NSLocalizedDescriptionKey]];
+        [self showErrorView];
+    }
+    return isValid;
+}
+
+- (UIView*)errorView
+{
+    UIImageView *errorView = [[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"warning.png"]] autorelease];
+    errorView.tag = ITFIELD_ERROR_VIEW;
+    return errorView;
+}
+
+- (void)showErrorView
+{
+    UIView *errorView = [self viewWithTag:ITFIELD_ERROR_VIEW];
+    if (errorView == nil) {
+        errorView = [self errorView];
+        [self addSubview:errorView];
+    }
+    errorView.center = CGPointMake(20, 20);
+}
+
+- (void)hideErrorView
+{
+    UIView *errorView = [self viewWithTag:ITFIELD_ERROR_VIEW];
+    [errorView removeFromSuperview];
+}
+
+- (void)addValidator:(ITBaseValidator*)validator
+{
+    [self.validatorsList addObject:validator];
+}
+
+- (void)removeValidator:(ITBaseValidator*)validator
+{
+    [self.validatorsList removeObjectIdenticalTo:validator];
+}
+
 
 @end

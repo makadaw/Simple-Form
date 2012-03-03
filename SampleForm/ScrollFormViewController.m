@@ -21,6 +21,8 @@
 #import "DateTimeField.h"
 #import "CurrencyField.h"
 
+#import "ITRequiredValidator.h"
+
 @implementation ScrollFormViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -58,12 +60,17 @@
     [form addField:lf];
     [lf release];
     
+    ITRequiredValidator *validator = [[ITRequiredValidator alloc] init];
+    
     TextField *f1 = [[TextField alloc] init];
+    [f1 addValidator:validator];
+    [validator release];
     f1.titleLabel.text = @"Title view";
     f1.fieldName = @"f1";
     [form addField:f1];
     [f1 release];
-    
+   
+   
     NumericField *nf = [[NumericField alloc] init];
     nf.titleLabel.text = @"Numeric field";
     nf.decimalPartSize = 10;
@@ -134,11 +141,19 @@
     tv.backgroundColor = [UIColor greenColor];
     [tv release];
     
-    UIButton *b = [[UIButton alloc] initWithFrame:CGRectMake(0, viewSize.size.height - 40, viewSize.size.width, 40)];
+    UIButton *b = [[UIButton alloc] initWithFrame:CGRectMake(0, viewSize.size.height - 40, 80, 40)];
     b.autoresizingMask = UIViewAutoresizingFlexibleTopMargin;
     b.backgroundColor = [UIColor grayColor];
     [b setTitle:@"Values" forState:UIControlStateNormal];
     [b addTarget:self action:@selector(collectValues) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:b];
+    [b release];
+    
+    b = [[UIButton alloc] initWithFrame:CGRectMake(100, viewSize.size.height - 40, 80, 40)];
+    b.autoresizingMask = UIViewAutoresizingFlexibleTopMargin;
+    b.backgroundColor = [UIColor grayColor];
+    [b setTitle:@"Validate" forState:UIControlStateNormal];
+    [b addTarget:self action:@selector(validateForm:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:b];
     [b release];
 }
@@ -164,7 +179,23 @@
 - (void)collectValues
 {
     NSDictionary *values = [form formValues];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Form" message:[NSString stringWithFormat:@"Values: %@", values] delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+    [alert show];
+    [alert release];
     NSLog(@"Values %@", values);
+}
+
+- (void)validateForm:(id)sender
+{
+    NSError *error = nil;
+    UIAlertView *alert;
+    if ([form validateForm:&error]) {
+        alert = [[UIAlertView alloc] initWithTitle:@"Form" message:@"Form is ok" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+    } else {
+        alert = [[UIAlertView alloc] initWithTitle:@"Form" message:[NSString stringWithFormat:@"Form is not ok \n %@", error.localizedDescription] delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+    }
+    [alert show];
+    [alert release];
 }
 
 @end

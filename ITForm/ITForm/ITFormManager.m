@@ -54,9 +54,21 @@
 }
 
 //Validation and data part
-- (BOOL)validateForm
+- (BOOL)validateForm:(NSError **)error
 {
-    return YES;
+    BOOL isValid = YES;
+    NSString *errorStr = @"";
+    for (ITField *field in self.fields) {
+        NSError *err = nil;
+        if (![field validate:&err]) {
+            isValid = NO;
+            errorStr = [errorStr stringByAppendingFormat:@"%@ \n", err.localizedDescription];
+        }
+    }
+    if (!isValid) {
+        *error = [NSError errorWithDomain:@"ITForm" code:1 userInfo:[NSDictionary dictionaryWithObject:errorStr forKey:NSLocalizedDescriptionKey]];
+    }
+    return isValid;
 }
 
 //Get form values

@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0410D370150235D1001642A8 /* ITBaseValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 0410D36E150235D1001642A8 /* ITBaseValidator.h */; };
+		0410D371150235D1001642A8 /* ITBaseValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0410D36F150235D1001642A8 /* ITBaseValidator.m */; };
+		0410D37415023DA1001642A8 /* ITRegExpValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 0410D37215023DA1001642A8 /* ITRegExpValidator.h */; };
+		0410D37515023DA1001642A8 /* ITRegExpValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0410D37315023DA1001642A8 /* ITRegExpValidator.m */; };
+		0410D37815023DD4001642A8 /* ITRequiredValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 0410D37615023DD4001642A8 /* ITRequiredValidator.h */; };
+		0410D37915023DD4001642A8 /* ITRequiredValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0410D37715023DD4001642A8 /* ITRequiredValidator.m */; };
 		045689E31501221A00733419 /* ITNumericField.h in Headers */ = {isa = PBXBuildFile; fileRef = 045689E11501221A00733419 /* ITNumericField.h */; };
 		045689E41501221A00733419 /* ITNumericField.m in Sources */ = {isa = PBXBuildFile; fileRef = 045689E21501221A00733419 /* ITNumericField.m */; };
 		045689EE1501534800733419 /* ITDateTimeField.h in Headers */ = {isa = PBXBuildFile; fileRef = 045689EC1501534800733419 /* ITDateTimeField.h */; };
@@ -50,6 +56,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0410D36D1502346E001642A8 /* warning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = warning.png; sourceTree = "<group>"; };
+		0410D36E150235D1001642A8 /* ITBaseValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITBaseValidator.h; sourceTree = "<group>"; };
+		0410D36F150235D1001642A8 /* ITBaseValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITBaseValidator.m; sourceTree = "<group>"; };
+		0410D37215023DA1001642A8 /* ITRegExpValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITRegExpValidator.h; sourceTree = "<group>"; };
+		0410D37315023DA1001642A8 /* ITRegExpValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITRegExpValidator.m; sourceTree = "<group>"; };
+		0410D37615023DD4001642A8 /* ITRequiredValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITRequiredValidator.h; sourceTree = "<group>"; };
+		0410D37715023DD4001642A8 /* ITRequiredValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITRequiredValidator.m; sourceTree = "<group>"; };
 		045689E11501221A00733419 /* ITNumericField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITNumericField.h; sourceTree = "<group>"; };
 		045689E21501221A00733419 /* ITNumericField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITNumericField.m; sourceTree = "<group>"; };
 		045689EC1501534800733419 /* ITDateTimeField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITDateTimeField.h; sourceTree = "<group>"; };
@@ -108,6 +121,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0410D36B15023394001642A8 /* Validators */ = {
+			isa = PBXGroup;
+			children = (
+				0410D36D1502346E001642A8 /* warning.png */,
+				0410D36E150235D1001642A8 /* ITBaseValidator.h */,
+				0410D36F150235D1001642A8 /* ITBaseValidator.m */,
+				0410D37615023DD4001642A8 /* ITRequiredValidator.h */,
+				0410D37715023DD4001642A8 /* ITRequiredValidator.m */,
+				0410D37215023DA1001642A8 /* ITRegExpValidator.h */,
+				0410D37315023DA1001642A8 /* ITRegExpValidator.m */,
+			);
+			name = Validators;
+			sourceTree = "<group>";
+		};
 		048C40D814FCFBD2003CF36E = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +167,7 @@
 		048C40E814FCFBD2003CF36E /* ITForm */ = {
 			isa = PBXGroup;
 			children = (
+				0410D36B15023394001642A8 /* Validators */,
 				048C412014FCFCB0003CF36E /* Views */,
 				048C411F14FCFC9C003CF36E /* Fields */,
 				048C411B14FCFC97003CF36E /* ITFormManager.h */,
@@ -231,6 +259,9 @@
 				048C417914FD576B003CF36E /* ITSpinnerField.h in Headers */,
 				045689E31501221A00733419 /* ITNumericField.h in Headers */,
 				045689EE1501534800733419 /* ITDateTimeField.h in Headers */,
+				0410D370150235D1001642A8 /* ITBaseValidator.h in Headers */,
+				0410D37415023DA1001642A8 /* ITRegExpValidator.h in Headers */,
+				0410D37815023DD4001642A8 /* ITRequiredValidator.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +373,9 @@
 				048C417A14FD576B003CF36E /* ITSpinnerField.m in Sources */,
 				045689E41501221A00733419 /* ITNumericField.m in Sources */,
 				045689EF1501534800733419 /* ITDateTimeField.m in Sources */,
+				0410D371150235D1001642A8 /* ITBaseValidator.m in Sources */,
+				0410D37515023DA1001642A8 /* ITRegExpValidator.m in Sources */,
+				0410D37915023DD4001642A8 /* ITRequiredValidator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
