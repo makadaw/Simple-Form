@@ -16,3 +16,4 @@ profile
 ._*
 */build/*
 .DS_Store
+*.xcuserstate
