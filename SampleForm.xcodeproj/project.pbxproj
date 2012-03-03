@@ -37,7 +37,7 @@
 		045689E715013D6D00733419 /* NumericField.m in Sources */ = {isa = PBXBuildFile; fileRef = 045689E615013D6D00733419 /* NumericField.m */; };
 		045689F21501581F00733419 /* DateTimeField.m in Sources */ = {isa = PBXBuildFile; fileRef = 045689F11501581E00733419 /* DateTimeField.m */; };
 		045689F51501590500733419 /* DateTimePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 045689F41501590500733419 /* DateTimePicker.m */; };
-		045689F715021C5700733419 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 045689F615021C5700733419 /* README */; };
+		045689F715021C5700733419 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 045689F615021C5700733419 /* README.md */; };
 		04568A0515022C6800733419 /* CurrencyField.m in Sources */ = {isa = PBXBuildFile; fileRef = 04568A0415022C6800733419 /* CurrencyField.m */; };
 /* End PBXBuildFile section */
 
@@ -116,7 +116,7 @@
 		045689F11501581E00733419 /* DateTimeField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateTimeField.m; sourceTree = "<group>"; };
 		045689F31501590500733419 /* DateTimePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateTimePicker.h; sourceTree = "<group>"; };
 		045689F41501590500733419 /* DateTimePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateTimePicker.m; sourceTree = "<group>"; };
-		045689F615021C5700733419 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = SOURCE_ROOT; };
+		045689F615021C5700733419 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = SOURCE_ROOT; };
 		04568A0315022C6800733419 /* CurrencyField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrencyField.h; sourceTree = "<group>"; };
 		04568A0415022C6800733419 /* CurrencyField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrencyField.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -207,7 +207,7 @@
 		0456897715010AC700733419 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				045689F615021C5700733419 /* README */,
+				045689F615021C5700733419 /* README.md */,
 				0456897815010AC700733419 /* SampleForm-Info.plist */,
 				0456897915010AC700733419 /* InfoPlist.strings */,
 				0456897C15010AC700733419 /* main.m */,
@@ -383,7 +383,7 @@
 				0456897B15010AC700733419 /* InfoPlist.strings in Resources */,
 				0456898715010AC700733419 /* ViewController_iPhone.xib in Resources */,
 				0456898A15010AC700733419 /* ViewController_iPad.xib in Resources */,
-				045689F715021C5700733419 /* README in Resources */,
+				045689F715021C5700733419 /* README.md in Resources */,
 				0410D37C15024615001642A8 /* warning.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
