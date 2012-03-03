@@ -10,8 +10,8 @@
 
 @class ITFormManager;
 
-@interface ViewController : UIViewController{
-    ITFormManager *form;
-}
+@interface ViewController : UIViewController 
+
+- (IBAction)showScrollForm:(id)sender;
 
 @end
