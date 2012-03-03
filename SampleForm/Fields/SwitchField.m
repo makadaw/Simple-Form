@@ -13,9 +13,9 @@
 - (void)viewDidAddedToForm
 {
     //self.fieldSwitch.frame = CGRectMake(10, 10, 60, 20)
-    self.fieldSwitch.center = CGPointMake(45, 22);
+    self.fieldSwitch.center = CGPointMake(55, 22);
     
-    self.titleLabel.frame = CGRectMake(90, 9.5, self.bounds.size.width-100, 25);
+    self.titleLabel.frame = CGRectMake(120, 9.5, self.bounds.size.width-120, 25);
     self.titleLabel.autoresizingMask = UIViewAutoresizingFlexibleWidth;
 }
 

@@ -546,6 +546,7 @@
 				GCC_PREFIX_HEADER = "SampleForm/SampleForm-Prefix.pch";
 				HEADER_SEARCH_PATHS = "\"$(SOURCE_ROOT)/ITForm/ITForm\"";
 				INFOPLIST_FILE = "SampleForm/SampleForm-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -558,6 +559,7 @@
 				GCC_PREFIX_HEADER = "SampleForm/SampleForm-Prefix.pch";
 				HEADER_SEARCH_PATHS = "\"$(SOURCE_ROOT)/ITForm/ITForm\"";
 				INFOPLIST_FILE = "SampleForm/SampleForm-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
