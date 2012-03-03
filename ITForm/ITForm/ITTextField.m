@@ -90,6 +90,19 @@
     return NO;
 }
 
+- (void)showErrorView
+{
+    UIView *errorView = [self errorView];
+    errorView.frame = CGRectMake(0, 0, 20, 20);
+    self.inputField.rightView = errorView;
+    self.inputField.rightViewMode = UITextFieldViewModeAlways;
+}
+
+- (void)hideErrorView
+{
+    self.inputField.rightView = nil;
+}
+
 
 
 @end

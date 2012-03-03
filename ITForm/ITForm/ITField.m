@@ -126,7 +126,7 @@
         ITBaseValidator *validator = [self.validatorsList objectAtIndex:i];
         if (![validator checkValue:[self fieldValue]]) {
             isValid = NO;
-            errorStr = [errorStr stringByAppendingFormat:@"%@ \n", validator.lastError];
+            errorStr = [errorStr stringByAppendingFormat:@"%@\n", validator.lastError];
         }
     }
     if (isValid) {

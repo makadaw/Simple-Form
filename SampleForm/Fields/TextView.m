@@ -19,4 +19,12 @@
     self.titleLabel.autoresizingMask = UIViewAutoresizingFlexibleWidth;
 }
 
+- (void)showErrorView
+{
+    [super showErrorView];
+    UIView *errorView = [self viewWithTag:ITFIELD_ERROR_VIEW];
+    errorView.center = CGPointMake(self.bounds.size.width-30, 19);
+    errorView.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin;
+}
+
 @end

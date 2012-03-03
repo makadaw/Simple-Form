@@ -62,7 +62,7 @@
         NSError *err = nil;
         if (![field validate:&err]) {
             isValid = NO;
-            errorStr = [errorStr stringByAppendingFormat:@"%@ \n", err.localizedDescription];
+            errorStr = [errorStr stringByAppendingString:err.localizedDescription];
         }
     }
     if (!isValid) {

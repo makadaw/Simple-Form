@@ -94,6 +94,7 @@
     [dtp release];
     dtf.titleLabel.text = @"Date Time Picker";
     [form addField:dtf];
+    [dtf addValidator:validator];
     [dtf release];
     
     dtf = [[DateTimeField alloc] init];
@@ -126,18 +127,21 @@
     sp.displayKey = @"value";
     sp.valueKey = @"key";
     [form addField:sp];
+    [sp addValidator:validator];
     [sp release];
     
     SwitchField *sf = [[SwitchField alloc] init];
     sf.titleLabel.text = @"Switch Me!";
     sf.fieldName = @"sw1";
     [form addField:sf];
+    [sf addValidator:validator];
     [sf release];
     
     TextView *tv = [[TextView alloc] init];
     tv.titleLabel.text = @"Text View";
     tv.fieldName = @"tv1";
     [form addField:tv];
+    [tv addValidator:validator];
     tv.backgroundColor = [UIColor greenColor];
     [tv release];
     
