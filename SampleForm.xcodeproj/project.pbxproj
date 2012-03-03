@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0456897115010AC700733419 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0456897015010AC700733419 /* UIKit.framework */; };
+		0456897315010AC700733419 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0456897215010AC700733419 /* Foundation.framework */; };
+		0456897515010AC700733419 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0456897415010AC700733419 /* CoreGraphics.framework */; };
+		0456897B15010AC700733419 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0456897915010AC700733419 /* InfoPlist.strings */; };
+		0456897D15010AC700733419 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0456897C15010AC700733419 /* main.m */; };
+		0456898115010AC700733419 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0456898015010AC700733419 /* AppDelegate.m */; };
+		0456898415010AC700733419 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0456898315010AC700733419 /* ViewController.m */; };
+		0456898715010AC700733419 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0456898515010AC700733419 /* ViewController_iPhone.xib */; };
+		0456898A15010AC700733419 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0456898815010AC700733419 /* ViewController_iPad.xib */; };
+		0456899215010AC700733419 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0456899115010AC700733419 /* SenTestingKit.framework */; };
+		0456899315010AC700733419 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0456897015010AC700733419 /* UIKit.framework */; };
+		0456899415010AC700733419 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0456897215010AC700733419 /* Foundation.framework */; };
+		0456899C15010AC700733419 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0456899A15010AC700733419 /* InfoPlist.strings */; };
+		0456899F15010AC700733419 /* SampleFormTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0456899E15010AC700733419 /* SampleFormTests.m */; };
+		045689BF150110B600733419 /* AbstractActionSheetPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 045689B6150110B600733419 /* AbstractActionSheetPicker.m */; };
+		045689C0150110B600733419 /* ActionSheetDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 045689B8150110B600733419 /* ActionSheetDatePicker.m */; };
+		045689C1150110B600733419 /* ActionSheetDistancePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 045689BA150110B600733419 /* ActionSheetDistancePicker.m */; };
+		045689C2150110B600733419 /* ActionSheetStringPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 045689BC150110B600733419 /* ActionSheetStringPicker.m */; };
+		045689C3150110B600733419 /* DistancePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 045689BE150110B600733419 /* DistancePickerView.m */; };
+		045689DA1501132800733419 /* SpinnerField.m in Sources */ = {isa = PBXBuildFile; fileRef = 045689D11501132800733419 /* SpinnerField.m */; };
+		045689DB1501132800733419 /* SpinnerPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 045689D31501132800733419 /* SpinnerPicker.m */; };
+		045689DC1501132800733419 /* SwitchField.m in Sources */ = {isa = PBXBuildFile; fileRef = 045689D51501132800733419 /* SwitchField.m */; };
+		045689DD1501132800733419 /* TextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 045689D71501132800733419 /* TextField.m */; };
+		045689DE1501132800733419 /* TextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 045689D91501132800733419 /* TextView.m */; };
+		045689E0150113E100733419 /* libITForm.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 045689B115010B9600733419 /* libITForm.a */; };
+		045689E715013D6D00733419 /* NumericField.m in Sources */ = {isa = PBXBuildFile; fileRef = 045689E615013D6D00733419 /* NumericField.m */; };
+		045689F21501581F00733419 /* DateTimeField.m in Sources */ = {isa = PBXBuildFile; fileRef = 045689F11501581E00733419 /* DateTimeField.m */; };
+		045689F51501590500733419 /* DateTimePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 045689F41501590500733419 /* DateTimePicker.m */; };
+		045689F715021C5700733419 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 045689F615021C5700733419 /* README */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0456899515010AC700733419 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0456896315010AC600733419 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0456896B15010AC600733419;
+			remoteInfo = SampleForm;
+		};
+		045689B015010B9600733419 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 045689A815010B9600733419 /* ITForm.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 048C40E314FCFBD2003CF36E;
+			remoteInfo = ITForm;
+		};
+		045689B215010B9600733419 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 045689A815010B9600733419 /* ITForm.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 048C40F314FCFBD2003CF36E;
+			remoteInfo = ITFormTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0456896C15010AC700733419 /* SampleForm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleForm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0456897015010AC700733419 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0456897215010AC700733419 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0456897415010AC700733419 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0456897815010AC700733419 /* SampleForm-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SampleForm-Info.plist"; sourceTree = "<group>"; };
+		0456897A15010AC700733419 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0456897C15010AC700733419 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0456897E15010AC700733419 /* SampleForm-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SampleForm-Prefix.pch"; sourceTree = "<group>"; };
+		0456897F15010AC700733419 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0456898015010AC700733419 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0456898215010AC700733419 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0456898315010AC700733419 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0456898615010AC700733419 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
+		0456898915010AC700733419 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		0456899015010AC700733419 /* SampleFormTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleFormTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0456899115010AC700733419 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		0456899915010AC700733419 /* SampleFormTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SampleFormTests-Info.plist"; sourceTree = "<group>"; };
+		0456899B15010AC700733419 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0456899D15010AC700733419 /* SampleFormTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SampleFormTests.h; sourceTree = "<group>"; };
+		0456899E15010AC700733419 /* SampleFormTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleFormTests.m; sourceTree = "<group>"; };
+		045689A815010B9600733419 /* ITForm.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ITForm.xcodeproj; path = ITForm/ITForm.xcodeproj; sourceTree = "<group>"; };
+		045689B5150110B600733419 /* AbstractActionSheetPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AbstractActionSheetPicker.h; path = ActionSheetPicker/Pickers/AbstractActionSheetPicker.h; sourceTree = SOURCE_ROOT; };
+		045689B6150110B600733419 /* AbstractActionSheetPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AbstractActionSheetPicker.m; path = ActionSheetPicker/Pickers/AbstractActionSheetPicker.m; sourceTree = SOURCE_ROOT; };
+		045689B7150110B600733419 /* ActionSheetDatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActionSheetDatePicker.h; path = ActionSheetPicker/Pickers/ActionSheetDatePicker.h; sourceTree = SOURCE_ROOT; };
+		045689B8150110B600733419 /* ActionSheetDatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ActionSheetDatePicker.m; path = ActionSheetPicker/Pickers/ActionSheetDatePicker.m; sourceTree = SOURCE_ROOT; };
+		045689B9150110B600733419 /* ActionSheetDistancePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActionSheetDistancePicker.h; path = ActionSheetPicker/Pickers/ActionSheetDistancePicker.h; sourceTree = SOURCE_ROOT; };
+		045689BA150110B600733419 /* ActionSheetDistancePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ActionSheetDistancePicker.m; path = ActionSheetPicker/Pickers/ActionSheetDistancePicker.m; sourceTree = SOURCE_ROOT; };
+		045689BB150110B600733419 /* ActionSheetStringPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActionSheetStringPicker.h; path = ActionSheetPicker/Pickers/ActionSheetStringPicker.h; sourceTree = SOURCE_ROOT; };
+		045689BC150110B600733419 /* ActionSheetStringPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ActionSheetStringPicker.m; path = ActionSheetPicker/Pickers/ActionSheetStringPicker.m; sourceTree = SOURCE_ROOT; };
+		045689BD150110B600733419 /* DistancePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DistancePickerView.h; path = ActionSheetPicker/Pickers/DistancePickerView.h; sourceTree = SOURCE_ROOT; };
+		045689BE150110B600733419 /* DistancePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DistancePickerView.m; path = ActionSheetPicker/Pickers/DistancePickerView.m; sourceTree = SOURCE_ROOT; };
+		045689D01501132800733419 /* SpinnerField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpinnerField.h; sourceTree = "<group>"; };
+		045689D11501132800733419 /* SpinnerField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpinnerField.m; sourceTree = "<group>"; };
+		045689D21501132800733419 /* SpinnerPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpinnerPicker.h; sourceTree = "<group>"; };
+		045689D31501132800733419 /* SpinnerPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpinnerPicker.m; sourceTree = "<group>"; };
+		045689D41501132800733419 /* SwitchField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwitchField.h; sourceTree = "<group>"; };
+		045689D51501132800733419 /* SwitchField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwitchField.m; sourceTree = "<group>"; };
+		045689D61501132800733419 /* TextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextField.h; sourceTree = "<group>"; };
+		045689D71501132800733419 /* TextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextField.m; sourceTree = "<group>"; };
+		045689D81501132800733419 /* TextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextView.h; sourceTree = "<group>"; };
+		045689D91501132800733419 /* TextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextView.m; sourceTree = "<group>"; };
+		045689E515013D6D00733419 /* NumericField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumericField.h; sourceTree = "<group>"; };
+		045689E615013D6D00733419 /* NumericField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumericField.m; sourceTree = "<group>"; };
+		045689F01501581E00733419 /* DateTimeField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateTimeField.h; sourceTree = "<group>"; };
+		045689F11501581E00733419 /* DateTimeField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateTimeField.m; sourceTree = "<group>"; };
+		045689F31501590500733419 /* DateTimePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateTimePicker.h; sourceTree = "<group>"; };
+		045689F41501590500733419 /* DateTimePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateTimePicker.m; sourceTree = "<group>"; };
+		045689F615021C5700733419 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0456896915010AC600733419 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				045689E0150113E100733419 /* libITForm.a in Frameworks */,
+				0456897115010AC700733419 /* UIKit.framework in Frameworks */,
+				0456897315010AC700733419 /* Foundation.framework in Frameworks */,
+				0456897515010AC700733419 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0456898C15010AC700733419 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0456899215010AC700733419 /* SenTestingKit.framework in Frameworks */,
+				0456899315010AC700733419 /* UIKit.framework in Frameworks */,
+				0456899415010AC700733419 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0456896115010AC600733419 = {
+			isa = PBXGroup;
+			children = (
+				045689A815010B9600733419 /* ITForm.xcodeproj */,
+				0456897615010AC700733419 /* SampleForm */,
+				0456899715010AC700733419 /* SampleFormTests */,
+				0456896F15010AC700733419 /* Frameworks */,
+				0456896D15010AC700733419 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0456896D15010AC700733419 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0456896C15010AC700733419 /* SampleForm.app */,
+				0456899015010AC700733419 /* SampleFormTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0456896F15010AC700733419 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0456897015010AC700733419 /* UIKit.framework */,
+				0456897215010AC700733419 /* Foundation.framework */,
+				0456897415010AC700733419 /* CoreGraphics.framework */,
+				0456899115010AC700733419 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0456897615010AC700733419 /* SampleForm */ = {
+			isa = PBXGroup;
+			children = (
+				045689B41501108C00733419 /* Pickers */,
+				045689C4150110BD00733419 /* Fields */,
+				0456897F15010AC700733419 /* AppDelegate.h */,
+				0456898015010AC700733419 /* AppDelegate.m */,
+				0456898215010AC700733419 /* ViewController.h */,
+				0456898315010AC700733419 /* ViewController.m */,
+				0456898515010AC700733419 /* ViewController_iPhone.xib */,
+				0456898815010AC700733419 /* ViewController_iPad.xib */,
+				0456897715010AC700733419 /* Supporting Files */,
+			);
+			path = SampleForm;
+			sourceTree = "<group>";
+		};
+		0456897715010AC700733419 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				045689F615021C5700733419 /* README */,
+				0456897815010AC700733419 /* SampleForm-Info.plist */,
+				0456897915010AC700733419 /* InfoPlist.strings */,
+				0456897C15010AC700733419 /* main.m */,
+				0456897E15010AC700733419 /* SampleForm-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0456899715010AC700733419 /* SampleFormTests */ = {
+			isa = PBXGroup;
+			children = (
+				0456899D15010AC700733419 /* SampleFormTests.h */,
+				0456899E15010AC700733419 /* SampleFormTests.m */,
+				0456899815010AC700733419 /* Supporting Files */,
+			);
+			path = SampleFormTests;
+			sourceTree = "<group>";
+		};
+		0456899815010AC700733419 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0456899915010AC700733419 /* SampleFormTests-Info.plist */,
+				0456899A15010AC700733419 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		045689A915010B9600733419 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				045689B115010B9600733419 /* libITForm.a */,
+				045689B315010B9600733419 /* ITFormTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		045689B41501108C00733419 /* Pickers */ = {
+			isa = PBXGroup;
+			children = (
+				045689B5150110B600733419 /* AbstractActionSheetPicker.h */,
+				045689B6150110B600733419 /* AbstractActionSheetPicker.m */,
+				045689B7150110B600733419 /* ActionSheetDatePicker.h */,
+				045689B8150110B600733419 /* ActionSheetDatePicker.m */,
+				045689B9150110B600733419 /* ActionSheetDistancePicker.h */,
+				045689BA150110B600733419 /* ActionSheetDistancePicker.m */,
+				045689BB150110B600733419 /* ActionSheetStringPicker.h */,
+				045689BC150110B600733419 /* ActionSheetStringPicker.m */,
+				045689BD150110B600733419 /* DistancePickerView.h */,
+				045689BE150110B600733419 /* DistancePickerView.m */,
+			);
+			name = Pickers;
+			sourceTree = "<group>";
+		};
+		045689C4150110BD00733419 /* Fields */ = {
+			isa = PBXGroup;
+			children = (
+				045689D01501132800733419 /* SpinnerField.h */,
+				045689D11501132800733419 /* SpinnerField.m */,
+				045689D21501132800733419 /* SpinnerPicker.h */,
+				045689D31501132800733419 /* SpinnerPicker.m */,
+				045689D41501132800733419 /* SwitchField.h */,
+				045689D51501132800733419 /* SwitchField.m */,
+				045689D61501132800733419 /* TextField.h */,
+				045689D71501132800733419 /* TextField.m */,
+				045689D81501132800733419 /* TextView.h */,
+				045689D91501132800733419 /* TextView.m */,
+				045689E515013D6D00733419 /* NumericField.h */,
+				045689E615013D6D00733419 /* NumericField.m */,
+				045689F01501581E00733419 /* DateTimeField.h */,
+				045689F11501581E00733419 /* DateTimeField.m */,
+				045689F31501590500733419 /* DateTimePicker.h */,
+				045689F41501590500733419 /* DateTimePicker.m */,
+			);
+			path = Fields;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0456896B15010AC600733419 /* SampleForm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 045689A215010AC700733419 /* Build configuration list for PBXNativeTarget "SampleForm" */;
+			buildPhases = (
+				0456896815010AC600733419 /* Sources */,
+				0456896915010AC600733419 /* Frameworks */,
+				0456896A15010AC600733419 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SampleForm;
+			productName = SampleForm;
+			productReference = 0456896C15010AC700733419 /* SampleForm.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0456898F15010AC700733419 /* SampleFormTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 045689A515010AC700733419 /* Build configuration list for PBXNativeTarget "SampleFormTests" */;
+			buildPhases = (
+				0456898B15010AC700733419 /* Sources */,
+				0456898C15010AC700733419 /* Frameworks */,
+				0456898D15010AC700733419 /* Resources */,
+				0456898E15010AC700733419 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0456899615010AC700733419 /* PBXTargetDependency */,
+			);
+			name = SampleFormTests;
+			productName = SampleFormTests;
+			productReference = 0456899015010AC700733419 /* SampleFormTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0456896315010AC600733419 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = ITC;
+			};
+			buildConfigurationList = 0456896615010AC600733419 /* Build configuration list for PBXProject "SampleForm" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0456896115010AC600733419;
+			productRefGroup = 0456896D15010AC700733419 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 045689A915010B9600733419 /* Products */;
+					ProjectRef = 045689A815010B9600733419 /* ITForm.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				0456896B15010AC600733419 /* SampleForm */,
+				0456898F15010AC700733419 /* SampleFormTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		045689B115010B9600733419 /* libITForm.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libITForm.a;
+			remoteRef = 045689B015010B9600733419 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		045689B315010B9600733419 /* ITFormTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ITFormTests.octest;
+			remoteRef = 045689B215010B9600733419 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0456896A15010AC600733419 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0456897B15010AC700733419 /* InfoPlist.strings in Resources */,
+				0456898715010AC700733419 /* ViewController_iPhone.xib in Resources */,
+				0456898A15010AC700733419 /* ViewController_iPad.xib in Resources */,
+				045689F715021C5700733419 /* README in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0456898D15010AC700733419 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0456899C15010AC700733419 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0456898E15010AC700733419 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0456896815010AC600733419 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0456897D15010AC700733419 /* main.m in Sources */,
+				0456898115010AC700733419 /* AppDelegate.m in Sources */,
+				0456898415010AC700733419 /* ViewController.m in Sources */,
+				045689BF150110B600733419 /* AbstractActionSheetPicker.m in Sources */,
+				045689C0150110B600733419 /* ActionSheetDatePicker.m in Sources */,
+				045689C1150110B600733419 /* ActionSheetDistancePicker.m in Sources */,
+				045689C2150110B600733419 /* ActionSheetStringPicker.m in Sources */,
+				045689C3150110B600733419 /* DistancePickerView.m in Sources */,
+				045689DA1501132800733419 /* SpinnerField.m in Sources */,
+				045689DB1501132800733419 /* SpinnerPicker.m in Sources */,
+				045689DC1501132800733419 /* SwitchField.m in Sources */,
+				045689DD1501132800733419 /* TextField.m in Sources */,
+				045689DE1501132800733419 /* TextView.m in Sources */,
+				045689E715013D6D00733419 /* NumericField.m in Sources */,
+				045689F21501581F00733419 /* DateTimeField.m in Sources */,
+				045689F51501590500733419 /* DateTimePicker.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0456898B15010AC700733419 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0456899F15010AC700733419 /* SampleFormTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0456899615010AC700733419 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0456896B15010AC600733419 /* SampleForm */;
+			targetProxy = 0456899515010AC700733419 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0456897915010AC700733419 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0456897A15010AC700733419 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0456898515010AC700733419 /* ViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0456898615010AC700733419 /* en */,
+			);
+			name = ViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		0456898815010AC700733419 /* ViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0456898915010AC700733419 /* en */,
+			);
+			name = ViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+		0456899A15010AC700733419 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0456899B15010AC700733419 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		045689A015010AC700733419 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		045689A115010AC700733419 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		045689A315010AC700733419 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SampleForm/SampleForm-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SOURCE_ROOT)/ITForm/ITForm\"";
+				INFOPLIST_FILE = "SampleForm/SampleForm-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		045689A415010AC700733419 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SampleForm/SampleForm-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SOURCE_ROOT)/ITForm/ITForm\"";
+				INFOPLIST_FILE = "SampleForm/SampleForm-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		045689A615010AC700733419 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SampleForm.app/SampleForm";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SampleForm/SampleForm-Prefix.pch";
+				INFOPLIST_FILE = "SampleFormTests/SampleFormTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		045689A715010AC700733419 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SampleForm.app/SampleForm";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SampleForm/SampleForm-Prefix.pch";
+				INFOPLIST_FILE = "SampleFormTests/SampleFormTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0456896615010AC600733419 /* Build configuration list for PBXProject "SampleForm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				045689A015010AC700733419 /* Debug */,
+				045689A115010AC700733419 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		045689A215010AC700733419 /* Build configuration list for PBXNativeTarget "SampleForm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				045689A315010AC700733419 /* Debug */,
+				045689A415010AC700733419 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		045689A515010AC700733419 /* Build configuration list for PBXNativeTarget "SampleFormTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				045689A615010AC700733419 /* Debug */,
+				045689A715010AC700733419 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0456896315010AC600733419 /* Project object */;
+}

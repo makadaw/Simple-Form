@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'ITForm' target in the 'ITForm' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

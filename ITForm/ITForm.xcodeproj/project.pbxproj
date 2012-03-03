@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		045689E31501221A00733419 /* ITNumericField.h in Headers */ = {isa = PBXBuildFile; fileRef = 045689E11501221A00733419 /* ITNumericField.h */; };
+		045689E41501221A00733419 /* ITNumericField.m in Sources */ = {isa = PBXBuildFile; fileRef = 045689E21501221A00733419 /* ITNumericField.m */; };
+		045689EE1501534800733419 /* ITDateTimeField.h in Headers */ = {isa = PBXBuildFile; fileRef = 045689EC1501534800733419 /* ITDateTimeField.h */; };
+		045689EF1501534800733419 /* ITDateTimeField.m in Sources */ = {isa = PBXBuildFile; fileRef = 045689ED1501534800733419 /* ITDateTimeField.m */; };
+		048C40E714FCFBD2003CF36E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 048C40E614FCFBD2003CF36E /* Foundation.framework */; };
+		048C40F514FCFBD2003CF36E /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 048C40F414FCFBD2003CF36E /* SenTestingKit.framework */; };
+		048C40F714FCFBD2003CF36E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 048C40F614FCFBD2003CF36E /* UIKit.framework */; };
+		048C40F814FCFBD2003CF36E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 048C40E614FCFBD2003CF36E /* Foundation.framework */; };
+		048C40FB14FCFBD2003CF36E /* libITForm.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 048C40E314FCFBD2003CF36E /* libITForm.a */; };
+		048C410114FCFBD2003CF36E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 048C40FF14FCFBD2003CF36E /* InfoPlist.strings */; };
+		048C410414FCFBD2003CF36E /* ITFormTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 048C410314FCFBD2003CF36E /* ITFormTests.m */; };
+		048C411D14FCFC97003CF36E /* ITFormManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 048C411B14FCFC97003CF36E /* ITFormManager.h */; };
+		048C411E14FCFC97003CF36E /* ITFormManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 048C411C14FCFC97003CF36E /* ITFormManager.m */; };
+		048C412314FCFDCE003CF36E /* ITField.h in Headers */ = {isa = PBXBuildFile; fileRef = 048C412114FCFDCE003CF36E /* ITField.h */; };
+		048C412414FCFDCE003CF36E /* ITField.m in Sources */ = {isa = PBXBuildFile; fileRef = 048C412214FCFDCE003CF36E /* ITField.m */; };
+		048C412714FCFDDE003CF36E /* ITScrollForm.h in Headers */ = {isa = PBXBuildFile; fileRef = 048C412514FCFDDE003CF36E /* ITScrollForm.h */; };
+		048C412814FCFDDE003CF36E /* ITScrollForm.m in Sources */ = {isa = PBXBuildFile; fileRef = 048C412614FCFDDE003CF36E /* ITScrollForm.m */; };
+		048C412B14FD0301003CF36E /* ITTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 048C412914FD0301003CF36E /* ITTextField.h */; };
+		048C412C14FD0301003CF36E /* ITTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 048C412A14FD0301003CF36E /* ITTextField.m */; };
+		048C414514FD2258003CF36E /* ITFormContainerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 048C414414FD2258003CF36E /* ITFormContainerView.h */; };
+		048C416114FD39CC003CF36E /* ITFieldResponderDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 048C416014FD39CC003CF36E /* ITFieldResponderDelegate.h */; };
+		048C416314FD3DBC003CF36E /* ITFieldDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 048C416214FD3DBC003CF36E /* ITFieldDelegate.h */; };
+		048C416614FD3FB1003CF36E /* ITSwitchField.h in Headers */ = {isa = PBXBuildFile; fileRef = 048C416414FD3FB1003CF36E /* ITSwitchField.h */; };
+		048C416714FD3FB1003CF36E /* ITSwitchField.m in Sources */ = {isa = PBXBuildFile; fileRef = 048C416514FD3FB1003CF36E /* ITSwitchField.m */; };
+		048C416D14FD50B2003CF36E /* ITTextViewField.h in Headers */ = {isa = PBXBuildFile; fileRef = 048C416B14FD50B2003CF36E /* ITTextViewField.h */; };
+		048C416E14FD50B2003CF36E /* ITTextViewField.m in Sources */ = {isa = PBXBuildFile; fileRef = 048C416C14FD50B2003CF36E /* ITTextViewField.m */; };
+		048C417414FD55A2003CF36E /* ITLabelField.h in Headers */ = {isa = PBXBuildFile; fileRef = 048C417214FD55A2003CF36E /* ITLabelField.h */; };
+		048C417514FD55A2003CF36E /* ITLabelField.m in Sources */ = {isa = PBXBuildFile; fileRef = 048C417314FD55A2003CF36E /* ITLabelField.m */; };
+		048C417914FD576B003CF36E /* ITSpinnerField.h in Headers */ = {isa = PBXBuildFile; fileRef = 048C417714FD576B003CF36E /* ITSpinnerField.h */; };
+		048C417A14FD576B003CF36E /* ITSpinnerField.m in Sources */ = {isa = PBXBuildFile; fileRef = 048C417814FD576B003CF36E /* ITSpinnerField.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		048C40F914FCFBD2003CF36E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 048C40DA14FCFBD2003CF36E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 048C40E214FCFBD2003CF36E;
+			remoteInfo = ITForm;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		045689E11501221A00733419 /* ITNumericField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITNumericField.h; sourceTree = "<group>"; };
+		045689E21501221A00733419 /* ITNumericField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITNumericField.m; sourceTree = "<group>"; };
+		045689EC1501534800733419 /* ITDateTimeField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITDateTimeField.h; sourceTree = "<group>"; };
+		045689ED1501534800733419 /* ITDateTimeField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITDateTimeField.m; sourceTree = "<group>"; };
+		048C40E314FCFBD2003CF36E /* libITForm.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libITForm.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		048C40E614FCFBD2003CF36E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		048C40EA14FCFBD2003CF36E /* ITForm-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ITForm-Prefix.pch"; sourceTree = "<group>"; };
+		048C40F314FCFBD2003CF36E /* ITFormTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ITFormTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		048C40F414FCFBD2003CF36E /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		048C40F614FCFBD2003CF36E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		048C40FE14FCFBD2003CF36E /* ITFormTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ITFormTests-Info.plist"; sourceTree = "<group>"; };
+		048C410014FCFBD2003CF36E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		048C410214FCFBD2003CF36E /* ITFormTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ITFormTests.h; sourceTree = "<group>"; };
+		048C410314FCFBD2003CF36E /* ITFormTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ITFormTests.m; sourceTree = "<group>"; };
+		048C411B14FCFC97003CF36E /* ITFormManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITFormManager.h; sourceTree = "<group>"; };
+		048C411C14FCFC97003CF36E /* ITFormManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITFormManager.m; sourceTree = "<group>"; };
+		048C412114FCFDCE003CF36E /* ITField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITField.h; sourceTree = "<group>"; };
+		048C412214FCFDCE003CF36E /* ITField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITField.m; sourceTree = "<group>"; };
+		048C412514FCFDDE003CF36E /* ITScrollForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITScrollForm.h; sourceTree = "<group>"; };
+		048C412614FCFDDE003CF36E /* ITScrollForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITScrollForm.m; sourceTree = "<group>"; };
+		048C412914FD0301003CF36E /* ITTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITTextField.h; sourceTree = "<group>"; };
+		048C412A14FD0301003CF36E /* ITTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITTextField.m; sourceTree = "<group>"; };
+		048C414414FD2258003CF36E /* ITFormContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITFormContainerView.h; sourceTree = "<group>"; };
+		048C416014FD39CC003CF36E /* ITFieldResponderDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITFieldResponderDelegate.h; sourceTree = "<group>"; };
+		048C416214FD3DBC003CF36E /* ITFieldDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITFieldDelegate.h; sourceTree = "<group>"; };
+		048C416414FD3FB1003CF36E /* ITSwitchField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITSwitchField.h; sourceTree = "<group>"; };
+		048C416514FD3FB1003CF36E /* ITSwitchField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITSwitchField.m; sourceTree = "<group>"; };
+		048C416B14FD50B2003CF36E /* ITTextViewField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITTextViewField.h; sourceTree = "<group>"; };
+		048C416C14FD50B2003CF36E /* ITTextViewField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITTextViewField.m; sourceTree = "<group>"; };
+		048C417214FD55A2003CF36E /* ITLabelField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITLabelField.h; sourceTree = "<group>"; };
+		048C417314FD55A2003CF36E /* ITLabelField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITLabelField.m; sourceTree = "<group>"; };
+		048C417714FD576B003CF36E /* ITSpinnerField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITSpinnerField.h; sourceTree = "<group>"; };
+		048C417814FD576B003CF36E /* ITSpinnerField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITSpinnerField.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		048C40E014FCFBD2003CF36E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				048C40E714FCFBD2003CF36E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		048C40EF14FCFBD2003CF36E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				048C40F514FCFBD2003CF36E /* SenTestingKit.framework in Frameworks */,
+				048C40F714FCFBD2003CF36E /* UIKit.framework in Frameworks */,
+				048C40F814FCFBD2003CF36E /* Foundation.framework in Frameworks */,
+				048C40FB14FCFBD2003CF36E /* libITForm.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		048C40D814FCFBD2003CF36E = {
+			isa = PBXGroup;
+			children = (
+				048C40E814FCFBD2003CF36E /* ITForm */,
+				048C40FC14FCFBD2003CF36E /* ITFormTests */,
+				048C40E514FCFBD2003CF36E /* Frameworks */,
+				048C40E414FCFBD2003CF36E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		048C40E414FCFBD2003CF36E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				048C40E314FCFBD2003CF36E /* libITForm.a */,
+				048C40F314FCFBD2003CF36E /* ITFormTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		048C40E514FCFBD2003CF36E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				048C40E614FCFBD2003CF36E /* Foundation.framework */,
+				048C40F414FCFBD2003CF36E /* SenTestingKit.framework */,
+				048C40F614FCFBD2003CF36E /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		048C40E814FCFBD2003CF36E /* ITForm */ = {
+			isa = PBXGroup;
+			children = (
+				048C412014FCFCB0003CF36E /* Views */,
+				048C411F14FCFC9C003CF36E /* Fields */,
+				048C411B14FCFC97003CF36E /* ITFormManager.h */,
+				048C411C14FCFC97003CF36E /* ITFormManager.m */,
+				048C40E914FCFBD2003CF36E /* Supporting Files */,
+			);
+			path = ITForm;
+			sourceTree = "<group>";
+		};
+		048C40E914FCFBD2003CF36E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				048C40EA14FCFBD2003CF36E /* ITForm-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		048C40FC14FCFBD2003CF36E /* ITFormTests */ = {
+			isa = PBXGroup;
+			children = (
+				048C410214FCFBD2003CF36E /* ITFormTests.h */,
+				048C410314FCFBD2003CF36E /* ITFormTests.m */,
+				048C40FD14FCFBD2003CF36E /* Supporting Files */,
+			);
+			path = ITFormTests;
+			sourceTree = "<group>";
+		};
+		048C40FD14FCFBD2003CF36E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				048C40FE14FCFBD2003CF36E /* ITFormTests-Info.plist */,
+				048C40FF14FCFBD2003CF36E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		048C411F14FCFC9C003CF36E /* Fields */ = {
+			isa = PBXGroup;
+			children = (
+				048C416014FD39CC003CF36E /* ITFieldResponderDelegate.h */,
+				048C416214FD3DBC003CF36E /* ITFieldDelegate.h */,
+				048C412114FCFDCE003CF36E /* ITField.h */,
+				048C412214FCFDCE003CF36E /* ITField.m */,
+				048C412914FD0301003CF36E /* ITTextField.h */,
+				048C412A14FD0301003CF36E /* ITTextField.m */,
+				048C416414FD3FB1003CF36E /* ITSwitchField.h */,
+				048C416514FD3FB1003CF36E /* ITSwitchField.m */,
+				048C416B14FD50B2003CF36E /* ITTextViewField.h */,
+				048C416C14FD50B2003CF36E /* ITTextViewField.m */,
+				048C417214FD55A2003CF36E /* ITLabelField.h */,
+				048C417314FD55A2003CF36E /* ITLabelField.m */,
+				048C417714FD576B003CF36E /* ITSpinnerField.h */,
+				048C417814FD576B003CF36E /* ITSpinnerField.m */,
+				045689E11501221A00733419 /* ITNumericField.h */,
+				045689E21501221A00733419 /* ITNumericField.m */,
+				045689EC1501534800733419 /* ITDateTimeField.h */,
+				045689ED1501534800733419 /* ITDateTimeField.m */,
+			);
+			name = Fields;
+			sourceTree = "<group>";
+		};
+		048C412014FCFCB0003CF36E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				048C414414FD2258003CF36E /* ITFormContainerView.h */,
+				048C412514FCFDDE003CF36E /* ITScrollForm.h */,
+				048C412614FCFDDE003CF36E /* ITScrollForm.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		048C40E114FCFBD2003CF36E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				048C411D14FCFC97003CF36E /* ITFormManager.h in Headers */,
+				048C412314FCFDCE003CF36E /* ITField.h in Headers */,
+				048C412714FCFDDE003CF36E /* ITScrollForm.h in Headers */,
+				048C412B14FD0301003CF36E /* ITTextField.h in Headers */,
+				048C414514FD2258003CF36E /* ITFormContainerView.h in Headers */,
+				048C416114FD39CC003CF36E /* ITFieldResponderDelegate.h in Headers */,
+				048C416314FD3DBC003CF36E /* ITFieldDelegate.h in Headers */,
+				048C416614FD3FB1003CF36E /* ITSwitchField.h in Headers */,
+				048C416D14FD50B2003CF36E /* ITTextViewField.h in Headers */,
+				048C417414FD55A2003CF36E /* ITLabelField.h in Headers */,
+				048C417914FD576B003CF36E /* ITSpinnerField.h in Headers */,
+				045689E31501221A00733419 /* ITNumericField.h in Headers */,
+				045689EE1501534800733419 /* ITDateTimeField.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		048C40E214FCFBD2003CF36E /* ITForm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 048C410714FCFBD2003CF36E /* Build configuration list for PBXNativeTarget "ITForm" */;
+			buildPhases = (
+				048C40DF14FCFBD2003CF36E /* Sources */,
+				048C40E014FCFBD2003CF36E /* Frameworks */,
+				048C40E114FCFBD2003CF36E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ITForm;
+			productName = ITForm;
+			productReference = 048C40E314FCFBD2003CF36E /* libITForm.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		048C40F214FCFBD2003CF36E /* ITFormTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 048C410A14FCFBD2003CF36E /* Build configuration list for PBXNativeTarget "ITFormTests" */;
+			buildPhases = (
+				048C40EE14FCFBD2003CF36E /* Sources */,
+				048C40EF14FCFBD2003CF36E /* Frameworks */,
+				048C40F014FCFBD2003CF36E /* Resources */,
+				048C40F114FCFBD2003CF36E /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				048C40FA14FCFBD2003CF36E /* PBXTargetDependency */,
+			);
+			name = ITFormTests;
+			productName = ITFormTests;
+			productReference = 048C40F314FCFBD2003CF36E /* ITFormTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		048C40DA14FCFBD2003CF36E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = ITC;
+			};
+			buildConfigurationList = 048C40DD14FCFBD2003CF36E /* Build configuration list for PBXProject "ITForm" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 048C40D814FCFBD2003CF36E;
+			productRefGroup = 048C40E414FCFBD2003CF36E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				048C40E214FCFBD2003CF36E /* ITForm */,
+				048C40F214FCFBD2003CF36E /* ITFormTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		048C40F014FCFBD2003CF36E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				048C410114FCFBD2003CF36E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		048C40F114FCFBD2003CF36E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		048C40DF14FCFBD2003CF36E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				048C411E14FCFC97003CF36E /* ITFormManager.m in Sources */,
+				048C412414FCFDCE003CF36E /* ITField.m in Sources */,
+				048C412814FCFDDE003CF36E /* ITScrollForm.m in Sources */,
+				048C412C14FD0301003CF36E /* ITTextField.m in Sources */,
+				048C416714FD3FB1003CF36E /* ITSwitchField.m in Sources */,
+				048C416E14FD50B2003CF36E /* ITTextViewField.m in Sources */,
+				048C417514FD55A2003CF36E /* ITLabelField.m in Sources */,
+				048C417A14FD576B003CF36E /* ITSpinnerField.m in Sources */,
+				045689E41501221A00733419 /* ITNumericField.m in Sources */,
+				045689EF1501534800733419 /* ITDateTimeField.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		048C40EE14FCFBD2003CF36E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				048C410414FCFBD2003CF36E /* ITFormTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		048C40FA14FCFBD2003CF36E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 048C40E214FCFBD2003CF36E /* ITForm */;
+			targetProxy = 048C40F914FCFBD2003CF36E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		048C40FF14FCFBD2003CF36E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				048C410014FCFBD2003CF36E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		048C410514FCFBD2003CF36E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		048C410614FCFBD2003CF36E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		048C410814FCFBD2003CF36E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/ITForm.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ITForm/ITForm-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		048C410914FCFBD2003CF36E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/ITForm.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ITForm/ITForm-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		048C410B14FCFBD2003CF36E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ITForm/ITForm-Prefix.pch";
+				INFOPLIST_FILE = "ITFormTests/ITFormTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		048C410C14FCFBD2003CF36E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ITForm/ITForm-Prefix.pch";
+				INFOPLIST_FILE = "ITFormTests/ITFormTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		048C40DD14FCFBD2003CF36E /* Build configuration list for PBXProject "ITForm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				048C410514FCFBD2003CF36E /* Debug */,
+				048C410614FCFBD2003CF36E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		048C410714FCFBD2003CF36E /* Build configuration list for PBXNativeTarget "ITForm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				048C410814FCFBD2003CF36E /* Debug */,
+				048C410914FCFBD2003CF36E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		048C410A14FCFBD2003CF36E /* Build configuration list for PBXNativeTarget "ITFormTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				048C410B14FCFBD2003CF36E /* Debug */,
+				048C410C14FCFBD2003CF36E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 048C40DA14FCFBD2003CF36E /* Project object */;
+}
