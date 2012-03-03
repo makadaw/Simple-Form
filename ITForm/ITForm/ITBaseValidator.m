@@ -67,6 +67,9 @@
     if (self == otherValidator) {
         return YES;
     }
+    if ([self class] == [otherValidator class]) {
+        return YES;
+    }
     return NO;
 }
 

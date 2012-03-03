@@ -10,4 +10,8 @@
 
 @interface ITRegExpValidator : ITBaseValidator
 
+@property (retain) NSString *regexpPattern;
+
+- (id)initWithPattern:(NSString*)pattern;
+
 @end

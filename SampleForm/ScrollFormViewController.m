@@ -22,6 +22,8 @@
 #import "CurrencyField.h"
 
 #import "ITRequiredValidator.h"
+#import "ITRegExpValidator.h"
+#import "ITAlphaValidator.h"
 
 @implementation ScrollFormViewController
 
@@ -61,10 +63,13 @@
     [lf release];
     
     ITRequiredValidator *validator = [[ITRequiredValidator alloc] init];
+    ITAlphaValidator *alphaV = [[ITAlphaValidator alloc] init];
     
     TextField *f1 = [[TextField alloc] init];
     [f1 addValidator:validator];
+    [f1 addValidator:alphaV];
     [validator release];
+    [alphaV release];
     f1.titleLabel.text = @"Title view";
     f1.fieldName = @"f1";
     [form addField:f1];
