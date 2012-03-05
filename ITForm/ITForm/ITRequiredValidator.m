@@ -13,7 +13,7 @@
 - (BOOL)checkValue:(NSString*)value
 {
     if (value == nil || [value isEqualToString:@""]) {
-        self.lastError = [self getErrorByCode:@"required"];
+        self.lastError = [self getErrorByCode:ITFORM_ERROR_REQUIRED];
         return NO;
     }
     return YES;
@@ -21,7 +21,7 @@
 
 - (void)setupErrorMessages
 {
-    self.errorMessages = [NSDictionary dictionaryWithObject:@"This field is required" forKey:@"required"];
+    self.errorMessages = [NSDictionary dictionaryWithObject:@"This field is required" forKey:ITFORM_ERROR_REQUIRED];
 }
 
 @end

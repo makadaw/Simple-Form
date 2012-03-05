@@ -18,7 +18,7 @@
 
 - (void)setupErrorMessages
 {
-    self.errorMessages = [NSDictionary dictionaryWithObject:@"Value not alpha" forKey:@"notMatch"];
+    self.errorMessages = [NSDictionary dictionaryWithObject:@"Value not alpha" forKey:ITFORM_ERROR_NOTMATCH];
 }
 
 @end

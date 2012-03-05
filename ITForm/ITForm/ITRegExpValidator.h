@@ -7,6 +7,7 @@
 //
 
 #import "ITBaseValidator.h"
+#define ITFORM_ERROR_NOTMATCH @"notMatch"
 
 @interface ITRegExpValidator : ITBaseValidator
 

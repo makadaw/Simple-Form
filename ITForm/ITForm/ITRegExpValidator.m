@@ -31,7 +31,7 @@
     if (self.regexpPattern != nil && ![self.regexpPattern isEqualToString:@""]) {
          NSPredicate *testPredicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", self.regexpPattern];
         if (![testPredicate evaluateWithObject:value]) {
-            self.lastError = [self getErrorByCode:@"notMatch"];
+            self.lastError = [self getErrorByCode:ITFORM_ERROR_NOTMATCH];
             return NO;
         }
     }
@@ -40,7 +40,7 @@
 
 - (void)setupErrorMessages
 {
-    self.errorMessages = [NSDictionary dictionaryWithObject:@"Value not match" forKey:@"notMatch"];
+    self.errorMessages = [NSDictionary dictionaryWithObject:@"Value not match" forKey:ITFORM_ERROR_NOTMATCH];
 }
 
 - (BOOL)isEqualToValidator:(ITRegExpValidator*)otherValidator
