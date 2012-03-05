@@ -37,6 +37,14 @@
 {
 }
 
+- (void)setErrorMessage:(NSString*)message forKey:(NSString*)key
+{
+    NSMutableDictionary *newErrors = [[NSMutableDictionary alloc] initWithDictionary:errorMessages];
+    [newErrors setObject:message forKey:key];
+    errorMessages = newErrors;
+    [newErrors release];
+}
+
 #pragma mark - Validate part
 - (BOOL)checkValue:(NSString*)value
 {

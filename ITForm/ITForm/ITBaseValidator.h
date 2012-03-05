@@ -17,5 +17,6 @@
 - (NSString*)getErrorByCode:(NSString*)code;
 
 - (BOOL)isEqualToValidator:(ITBaseValidator*)otherValidator;
+- (void)setErrorMessage:(NSString*)message forKey:(NSString*)key;
 
 @end
