@@ -56,7 +56,7 @@
     if (self.selectedItem == nil) {
         return nil;
     } else {
-        return [self.selectedItem valueForKey:self.valueKey];
+        return [NSString stringWithFormat:@"%@", [self.selectedItem valueForKey:self.valueKey]];
     }
 }
 

@@ -53,6 +53,23 @@
     [contentManager addField:field];
 }
 
+
+- (ITField*)fieldByName:(NSString*)fieldName
+{
+    NSUInteger index = [self.fields indexOfObjectPassingTest:^BOOL(id obj, NSUInteger idx, BOOL *stop){
+        ITField *f = (ITField*)obj;
+        if ([f.fieldName isEqualToString:fieldName]) {
+            *stop = YES;
+        }
+        return *stop;
+    }];
+    ITField *field;
+    if (index != NSNotFound) {
+        field = [self.fields objectAtIndex:index];
+    }
+    return field;
+}
+
 //Validation and data part
 - (BOOL)validateForm:(NSError **)error
 {

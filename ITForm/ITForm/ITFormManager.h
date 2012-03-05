@@ -22,6 +22,8 @@
 - (id)initWithContentManager:(id<ITFormContainerView>)ctManager;
 - (void)addField:(ITField*)field;
 
+- (ITField*)fieldByName:(NSString*)fieldName;
+
 - (ITField*)respondedField;
 
 - (BOOL)validateForm:(NSError **)error;
