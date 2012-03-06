@@ -45,7 +45,7 @@
         //Decimal validate
         regex = [NSString stringWithFormat:@"[\\d]+\\%@?[0-9]{0,%d}", self.decimalSeparator, self.decimalPartSize];
     } else {
-        regex = @"[\\d]";
+        regex = @"[\\d]+";
     }
     NSPredicate *testPredicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", regex];
     if ([testPredicate evaluateWithObject:newSring] || [string isEqualToString:@""]) {

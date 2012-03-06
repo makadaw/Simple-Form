@@ -20,6 +20,7 @@
 #import "DateTimePicker.h"
 #import "DateTimeField.h"
 #import "CurrencyField.h"
+#import "CounterField.h"
 
 #import "ITRequiredValidator.h"
 #import "ITRegExpValidator.h"
@@ -74,7 +75,11 @@
     f1.fieldName = @"f1";
     [form addField:f1];
     [f1 release];
-   
+    
+    CounterField *cof = [[CounterField alloc] initWithFieldName:@"counter"];
+    cof.titleLabel.text = @"Counter";
+    [form addField:cof];
+    [cof release];
    
     NumericField *nf = [[NumericField alloc] init];
     nf.titleLabel.text = @"Numeric field";

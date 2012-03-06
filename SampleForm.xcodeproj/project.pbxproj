@@ -39,6 +39,7 @@
 		045689F51501590500733419 /* DateTimePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 045689F41501590500733419 /* DateTimePicker.m */; };
 		045689F715021C5700733419 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 045689F615021C5700733419 /* README.md */; };
 		04568A0515022C6800733419 /* CurrencyField.m in Sources */ = {isa = PBXBuildFile; fileRef = 04568A0415022C6800733419 /* CurrencyField.m */; };
+		046B41231506598D0081D252 /* CounterField.m in Sources */ = {isa = PBXBuildFile; fileRef = 046B41221506598D0081D252 /* CounterField.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +120,8 @@
 		045689F615021C5700733419 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = SOURCE_ROOT; };
 		04568A0315022C6800733419 /* CurrencyField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrencyField.h; sourceTree = "<group>"; };
 		04568A0415022C6800733419 /* CurrencyField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrencyField.m; sourceTree = "<group>"; };
+		046B41211506598D0081D252 /* CounterField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CounterField.h; sourceTree = "<group>"; };
+		046B41221506598D0081D252 /* CounterField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CounterField.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -282,6 +285,8 @@
 				045689F41501590500733419 /* DateTimePicker.m */,
 				04568A0315022C6800733419 /* CurrencyField.h */,
 				04568A0415022C6800733419 /* CurrencyField.m */,
+				046B41211506598D0081D252 /* CounterField.h */,
+				046B41221506598D0081D252 /* CounterField.m */,
 			);
 			path = Fields;
 			sourceTree = "<group>";
@@ -437,6 +442,7 @@
 				045689F51501590500733419 /* DateTimePicker.m in Sources */,
 				04568A0515022C6800733419 /* CurrencyField.m in Sources */,
 				0410D36A1502314B001642A8 /* ScrollFormViewController.m in Sources */,
+				046B41231506598D0081D252 /* CounterField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

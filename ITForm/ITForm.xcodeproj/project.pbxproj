@@ -19,6 +19,8 @@
 		045689E41501221A00733419 /* ITNumericField.m in Sources */ = {isa = PBXBuildFile; fileRef = 045689E21501221A00733419 /* ITNumericField.m */; };
 		045689EE1501534800733419 /* ITDateTimeField.h in Headers */ = {isa = PBXBuildFile; fileRef = 045689EC1501534800733419 /* ITDateTimeField.h */; };
 		045689EF1501534800733419 /* ITDateTimeField.m in Sources */ = {isa = PBXBuildFile; fileRef = 045689ED1501534800733419 /* ITDateTimeField.m */; };
+		046B411E1506567C0081D252 /* ITCounterField.h in Headers */ = {isa = PBXBuildFile; fileRef = 046B411C1506567C0081D252 /* ITCounterField.h */; };
+		046B411F1506567C0081D252 /* ITCounterField.m in Sources */ = {isa = PBXBuildFile; fileRef = 046B411D1506567C0081D252 /* ITCounterField.m */; };
 		048C40E714FCFBD2003CF36E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 048C40E614FCFBD2003CF36E /* Foundation.framework */; };
 		048C40F514FCFBD2003CF36E /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 048C40F414FCFBD2003CF36E /* SenTestingKit.framework */; };
 		048C40F714FCFBD2003CF36E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 048C40F614FCFBD2003CF36E /* UIKit.framework */; };
@@ -70,6 +72,8 @@
 		045689E21501221A00733419 /* ITNumericField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITNumericField.m; sourceTree = "<group>"; };
 		045689EC1501534800733419 /* ITDateTimeField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITDateTimeField.h; sourceTree = "<group>"; };
 		045689ED1501534800733419 /* ITDateTimeField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITDateTimeField.m; sourceTree = "<group>"; };
+		046B411C1506567C0081D252 /* ITCounterField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITCounterField.h; sourceTree = "<group>"; };
+		046B411D1506567C0081D252 /* ITCounterField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITCounterField.m; sourceTree = "<group>"; };
 		048C40E314FCFBD2003CF36E /* libITForm.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libITForm.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		048C40E614FCFBD2003CF36E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		048C40EA14FCFBD2003CF36E /* ITForm-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ITForm-Prefix.pch"; sourceTree = "<group>"; };
@@ -229,6 +233,8 @@
 				045689E21501221A00733419 /* ITNumericField.m */,
 				045689EC1501534800733419 /* ITDateTimeField.h */,
 				045689ED1501534800733419 /* ITDateTimeField.m */,
+				046B411C1506567C0081D252 /* ITCounterField.h */,
+				046B411D1506567C0081D252 /* ITCounterField.m */,
 			);
 			name = Fields;
 			sourceTree = "<group>";
@@ -267,6 +273,7 @@
 				0410D37415023DA1001642A8 /* ITRegExpValidator.h in Headers */,
 				0410D37815023DD4001642A8 /* ITRequiredValidator.h in Headers */,
 				0410D37F150251EC001642A8 /* ITAlphaValidator.h in Headers */,
+				046B411E1506567C0081D252 /* ITCounterField.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,6 +389,7 @@
 				0410D37515023DA1001642A8 /* ITRegExpValidator.m in Sources */,
 				0410D37915023DD4001642A8 /* ITRequiredValidator.m in Sources */,
 				0410D380150251EC001642A8 /* ITAlphaValidator.m in Sources */,
+				046B411F1506567C0081D252 /* ITCounterField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -93,11 +93,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "ITForm/ITForm/ITFormManager.m"
-         timestampString = "352468202.573004"
+         timestampString = "352655446.131578"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "81"
-         endingLineNumber = "81"
+         startingLineNumber = "98"
+         endingLineNumber = "98"
          landmarkName = "-formValues"
          landmarkType = "5">
       </FileBreakpoint>
@@ -191,11 +191,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "SampleForm/ScrollFormViewController.m"
-         timestampString = "352474216.07513"
+         timestampString = "352737763.126059"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "174"
-         endingLineNumber = "174"
+         startingLineNumber = "179"
+         endingLineNumber = "179"
          landmarkName = "-viewDidUnload"
          landmarkType = "5">
       </FileBreakpoint>
@@ -205,12 +205,40 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "SampleForm/ScrollFormViewController.m"
-         timestampString = "352474240.067161"
+         timestampString = "352737763.126059"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "173"
-         endingLineNumber = "173"
+         startingLineNumber = "178"
+         endingLineNumber = "178"
          landmarkName = "-viewDidUnload"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "ITForm/ITForm/ITCounterField.m"
+         timestampString = "352738124.578857"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "25"
+         endingLineNumber = "25"
+         landmarkName = "-postInit"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "ITForm/ITForm/ITCounterField.m"
+         timestampString = "352739732.105238"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "52"
+         endingLineNumber = "52"
+         landmarkName = "-decrementValue"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>
