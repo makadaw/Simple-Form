@@ -126,6 +126,9 @@
 - (void)startEditingField:(ITField*)field
 {
     editingField = field;
+    
+    CGRect fieldRealFrame = [(UIScrollView*)contentManager convertRect:field.frame fromView:field.superview];
+    [(UIScrollView*)contentManager scrollRectToVisible:fieldRealFrame animated:YES];
 }
 
 - (void)endEditingField:(ITField*)field

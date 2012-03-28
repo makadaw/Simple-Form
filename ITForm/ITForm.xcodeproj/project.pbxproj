@@ -26,8 +26,6 @@
 		048C40F714FCFBD2003CF36E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 048C40F614FCFBD2003CF36E /* UIKit.framework */; };
 		048C40F814FCFBD2003CF36E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 048C40E614FCFBD2003CF36E /* Foundation.framework */; };
 		048C40FB14FCFBD2003CF36E /* libITForm.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 048C40E314FCFBD2003CF36E /* libITForm.a */; };
-		048C410114FCFBD2003CF36E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 048C40FF14FCFBD2003CF36E /* InfoPlist.strings */; };
-		048C410414FCFBD2003CF36E /* ITFormTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 048C410314FCFBD2003CF36E /* ITFormTests.m */; };
 		048C411D14FCFC97003CF36E /* ITFormManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 048C411B14FCFC97003CF36E /* ITFormManager.h */; };
 		048C411E14FCFC97003CF36E /* ITFormManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 048C411C14FCFC97003CF36E /* ITFormManager.m */; };
 		048C412314FCFDCE003CF36E /* ITField.h in Headers */ = {isa = PBXBuildFile; fileRef = 048C412114FCFDCE003CF36E /* ITField.h */; };
@@ -80,10 +78,6 @@
 		048C40F314FCFBD2003CF36E /* ITFormTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ITFormTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		048C40F414FCFBD2003CF36E /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		048C40F614FCFBD2003CF36E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		048C40FE14FCFBD2003CF36E /* ITFormTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ITFormTests-Info.plist"; sourceTree = "<group>"; };
-		048C410014FCFBD2003CF36E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		048C410214FCFBD2003CF36E /* ITFormTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ITFormTests.h; sourceTree = "<group>"; };
-		048C410314FCFBD2003CF36E /* ITFormTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ITFormTests.m; sourceTree = "<group>"; };
 		048C411B14FCFC97003CF36E /* ITFormManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITFormManager.h; sourceTree = "<group>"; };
 		048C411C14FCFC97003CF36E /* ITFormManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITFormManager.m; sourceTree = "<group>"; };
 		048C412114FCFDCE003CF36E /* ITField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITField.h; sourceTree = "<group>"; };
@@ -147,7 +141,6 @@
 			isa = PBXGroup;
 			children = (
 				048C40E814FCFBD2003CF36E /* ITForm */,
-				048C40FC14FCFBD2003CF36E /* ITFormTests */,
 				048C40E514FCFBD2003CF36E /* Frameworks */,
 				048C40E414FCFBD2003CF36E /* Products */,
 			);
@@ -189,25 +182,6 @@
 			isa = PBXGroup;
 			children = (
 				048C40EA14FCFBD2003CF36E /* ITForm-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		048C40FC14FCFBD2003CF36E /* ITFormTests */ = {
-			isa = PBXGroup;
-			children = (
-				048C410214FCFBD2003CF36E /* ITFormTests.h */,
-				048C410314FCFBD2003CF36E /* ITFormTests.m */,
-				048C40FD14FCFBD2003CF36E /* Supporting Files */,
-			);
-			path = ITFormTests;
-			sourceTree = "<group>";
-		};
-		048C40FD14FCFBD2003CF36E /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				048C40FE14FCFBD2003CF36E /* ITFormTests-Info.plist */,
-				048C40FF14FCFBD2003CF36E /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -348,7 +322,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				048C410114FCFBD2003CF36E /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,7 +370,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				048C410414FCFBD2003CF36E /* ITFormTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,17 +382,6 @@
 			targetProxy = 048C40F914FCFBD2003CF36E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		048C40FF14FCFBD2003CF36E /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				048C410014FCFBD2003CF36E /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		048C410514FCFBD2003CF36E /* Debug */ = {

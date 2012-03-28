@@ -102,6 +102,7 @@
 
 - (void)keyboardWillShow:(NSNotification*)notification
 {
+    /*
     oldOffset = self.contentOffset;
     CGPoint pt;
     CGRect rc = [[formManager respondedField] bounds];
@@ -110,6 +111,21 @@
     pt.x = 0;
     pt.y -= 60;
     [self setContentOffset:pt animated:YES];
+    */
+    
+    
+    
+    
+    NSDictionary *d = [notification userInfo];
+    CGRect r = [[d objectForKey:UIKeyboardFrameEndUserInfoKey] CGRectValue];
+    r = [self convertRect:r fromView:nil];
+    
+    UIEdgeInsets insets = self.contentInset;
+    insets.bottom = r.size.height;
+    self.contentInset = insets;
+    insets = self.scrollIndicatorInsets;
+    insets.bottom = r.size.height;
+    self.scrollIndicatorInsets = insets;
 }
 
 - (void)keyboardWillHide:(NSNotification*)notification
@@ -123,6 +139,7 @@
 
 - (void)restoreNoKeyboardPosition
 {
+    /*
     CGPoint offset = oldOffset;
     if (offset.y < 0) {
         offset.y = 0;
@@ -135,6 +152,11 @@
         offset.y = 0;
     }
     [self setContentOffset:offset animated:YES];
+    */
+    
+    UIEdgeInsets contentInsets = UIEdgeInsetsZero;
+    self.contentInset = contentInsets;
+    self.scrollIndicatorInsets = contentInsets;
 }
 
 @end
