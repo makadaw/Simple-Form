@@ -45,6 +45,8 @@
 		048C417514FD55A2003CF36E /* ITLabelField.m in Sources */ = {isa = PBXBuildFile; fileRef = 048C417314FD55A2003CF36E /* ITLabelField.m */; };
 		048C417914FD576B003CF36E /* ITSpinnerField.h in Headers */ = {isa = PBXBuildFile; fileRef = 048C417714FD576B003CF36E /* ITSpinnerField.h */; };
 		048C417A14FD576B003CF36E /* ITSpinnerField.m in Sources */ = {isa = PBXBuildFile; fileRef = 048C417814FD576B003CF36E /* ITSpinnerField.m */; };
+		627FEACE1524ABD1007E0610 /* ITImageField.h in Headers */ = {isa = PBXBuildFile; fileRef = 627FEACC1524ABD1007E0610 /* ITImageField.h */; };
+		627FEACF1524ABD1007E0610 /* ITImageField.m in Sources */ = {isa = PBXBuildFile; fileRef = 627FEACD1524ABD1007E0610 /* ITImageField.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +99,8 @@
 		048C417314FD55A2003CF36E /* ITLabelField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITLabelField.m; sourceTree = "<group>"; };
 		048C417714FD576B003CF36E /* ITSpinnerField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITSpinnerField.h; sourceTree = "<group>"; };
 		048C417814FD576B003CF36E /* ITSpinnerField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITSpinnerField.m; sourceTree = "<group>"; };
+		627FEACC1524ABD1007E0610 /* ITImageField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITImageField.h; sourceTree = "<group>"; };
+		627FEACD1524ABD1007E0610 /* ITImageField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITImageField.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +193,8 @@
 		048C411F14FCFC9C003CF36E /* Fields */ = {
 			isa = PBXGroup;
 			children = (
+				627FEACC1524ABD1007E0610 /* ITImageField.h */,
+				627FEACD1524ABD1007E0610 /* ITImageField.m */,
 				048C416014FD39CC003CF36E /* ITFieldResponderDelegate.h */,
 				048C416214FD3DBC003CF36E /* ITFieldDelegate.h */,
 				048C412114FCFDCE003CF36E /* ITField.h */,
@@ -248,6 +254,7 @@
 				0410D37815023DD4001642A8 /* ITRequiredValidator.h in Headers */,
 				0410D37F150251EC001642A8 /* ITAlphaValidator.h in Headers */,
 				046B411E1506567C0081D252 /* ITCounterField.h in Headers */,
+				627FEACE1524ABD1007E0610 /* ITImageField.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +370,7 @@
 				0410D37915023DD4001642A8 /* ITRequiredValidator.m in Sources */,
 				0410D380150251EC001642A8 /* ITAlphaValidator.m in Sources */,
 				046B411F1506567C0081D252 /* ITCounterField.m in Sources */,
+				627FEACF1524ABD1007E0610 /* ITImageField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
