@@ -84,4 +84,16 @@
         [self.responderDelegate startEditingField:self];
     }
 }
+
+- (void)showErrorView
+{
+    UIView *errorView = [self errorView];
+    errorView.frame = CGRectMake(self.inputField.frame.size.width-20.0, self.inputField.frame.size.height-20.0, 20, 20);
+    [self.inputField addSubview:errorView];
+}
+
+- (void)hideErrorView
+{
+    [self.errorView removeFromSuperview];
+}
 @end

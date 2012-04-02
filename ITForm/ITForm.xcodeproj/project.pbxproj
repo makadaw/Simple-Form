@@ -47,6 +47,9 @@
 		048C417A14FD576B003CF36E /* ITSpinnerField.m in Sources */ = {isa = PBXBuildFile; fileRef = 048C417814FD576B003CF36E /* ITSpinnerField.m */; };
 		627FEACE1524ABD1007E0610 /* ITImageField.h in Headers */ = {isa = PBXBuildFile; fileRef = 627FEACC1524ABD1007E0610 /* ITImageField.h */; };
 		627FEACF1524ABD1007E0610 /* ITImageField.m in Sources */ = {isa = PBXBuildFile; fileRef = 627FEACD1524ABD1007E0610 /* ITImageField.m */; };
+		627FEAD31525D10A007E0610 /* ITButtonField.h in Headers */ = {isa = PBXBuildFile; fileRef = 627FEAD11525D109007E0610 /* ITButtonField.h */; };
+		627FEAD41525D10A007E0610 /* ITButtonField.m in Sources */ = {isa = PBXBuildFile; fileRef = 627FEAD21525D109007E0610 /* ITButtonField.m */; };
+		627FEAEE1529F834007E0610 /* warning.png in Resources */ = {isa = PBXBuildFile; fileRef = 627FEAED1529F834007E0610 /* warning.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +104,9 @@
 		048C417814FD576B003CF36E /* ITSpinnerField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITSpinnerField.m; sourceTree = "<group>"; };
 		627FEACC1524ABD1007E0610 /* ITImageField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITImageField.h; sourceTree = "<group>"; };
 		627FEACD1524ABD1007E0610 /* ITImageField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITImageField.m; sourceTree = "<group>"; };
+		627FEAD11525D109007E0610 /* ITButtonField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITButtonField.h; sourceTree = "<group>"; };
+		627FEAD21525D109007E0610 /* ITButtonField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITButtonField.m; sourceTree = "<group>"; };
+		627FEAED1529F834007E0610 /* warning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = warning.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +184,7 @@
 				048C411B14FCFC97003CF36E /* ITFormManager.h */,
 				048C411C14FCFC97003CF36E /* ITFormManager.m */,
 				048C40E914FCFBD2003CF36E /* Supporting Files */,
+				627FEAEC1529F832007E0610 /* Resources */,
 			);
 			path = ITForm;
 			sourceTree = "<group>";
@@ -193,6 +200,8 @@
 		048C411F14FCFC9C003CF36E /* Fields */ = {
 			isa = PBXGroup;
 			children = (
+				627FEAD11525D109007E0610 /* ITButtonField.h */,
+				627FEAD21525D109007E0610 /* ITButtonField.m */,
 				627FEACC1524ABD1007E0610 /* ITImageField.h */,
 				627FEACD1524ABD1007E0610 /* ITImageField.m */,
 				048C416014FD39CC003CF36E /* ITFieldResponderDelegate.h */,
@@ -229,6 +238,14 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
+		627FEAEC1529F832007E0610 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				627FEAED1529F834007E0610 /* warning.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -255,6 +272,7 @@
 				0410D37F150251EC001642A8 /* ITAlphaValidator.h in Headers */,
 				046B411E1506567C0081D252 /* ITCounterField.h in Headers */,
 				627FEACE1524ABD1007E0610 /* ITImageField.h in Headers */,
+				627FEAD31525D10A007E0610 /* ITButtonField.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +286,7 @@
 				048C40DF14FCFBD2003CF36E /* Sources */,
 				048C40E014FCFBD2003CF36E /* Frameworks */,
 				048C40E114FCFBD2003CF36E /* Headers */,
+				627FEAEB1529F807007E0610 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -332,6 +351,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		627FEAEB1529F807007E0610 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				627FEAEE1529F834007E0610 /* warning.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -371,6 +398,7 @@
 				0410D380150251EC001642A8 /* ITAlphaValidator.m in Sources */,
 				046B411F1506567C0081D252 /* ITCounterField.m in Sources */,
 				627FEACF1524ABD1007E0610 /* ITImageField.m in Sources */,
+				627FEAD41525D10A007E0610 /* ITButtonField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
