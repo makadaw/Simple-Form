@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-@class ITFormManager, ITField;
+@class ITFormManager, ITField, ITFieldSet;
 
 @protocol ITFormContainerView <NSObject>
 @required
@@ -15,6 +15,8 @@
 
 - (void)addField:(ITField*)field;
 - (void)removeField:(ITField*)field;
+
+- (void)addFieldSet:(ITFieldSet*)fieldSet;
 
 - (void)restoreNoKeyboardPosition;
 - (void)setNeedReorderFields;

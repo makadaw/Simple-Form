@@ -45,6 +45,8 @@
 		048C417514FD55A2003CF36E /* ITLabelField.m in Sources */ = {isa = PBXBuildFile; fileRef = 048C417314FD55A2003CF36E /* ITLabelField.m */; };
 		048C417914FD576B003CF36E /* ITSpinnerField.h in Headers */ = {isa = PBXBuildFile; fileRef = 048C417714FD576B003CF36E /* ITSpinnerField.h */; };
 		048C417A14FD576B003CF36E /* ITSpinnerField.m in Sources */ = {isa = PBXBuildFile; fileRef = 048C417814FD576B003CF36E /* ITSpinnerField.m */; };
+		62199FC9152B45B200BBD656 /* ITFieldSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 62199FC7152B45B200BBD656 /* ITFieldSet.h */; };
+		62199FCA152B45B200BBD656 /* ITFieldSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 62199FC8152B45B200BBD656 /* ITFieldSet.m */; };
 		627FEACE1524ABD1007E0610 /* ITImageField.h in Headers */ = {isa = PBXBuildFile; fileRef = 627FEACC1524ABD1007E0610 /* ITImageField.h */; };
 		627FEACF1524ABD1007E0610 /* ITImageField.m in Sources */ = {isa = PBXBuildFile; fileRef = 627FEACD1524ABD1007E0610 /* ITImageField.m */; };
 		627FEAD31525D10A007E0610 /* ITButtonField.h in Headers */ = {isa = PBXBuildFile; fileRef = 627FEAD11525D109007E0610 /* ITButtonField.h */; };
@@ -102,6 +104,8 @@
 		048C417314FD55A2003CF36E /* ITLabelField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITLabelField.m; sourceTree = "<group>"; };
 		048C417714FD576B003CF36E /* ITSpinnerField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITSpinnerField.h; sourceTree = "<group>"; };
 		048C417814FD576B003CF36E /* ITSpinnerField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITSpinnerField.m; sourceTree = "<group>"; };
+		62199FC7152B45B200BBD656 /* ITFieldSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITFieldSet.h; sourceTree = "<group>"; };
+		62199FC8152B45B200BBD656 /* ITFieldSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITFieldSet.m; sourceTree = "<group>"; };
 		627FEACC1524ABD1007E0610 /* ITImageField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITImageField.h; sourceTree = "<group>"; };
 		627FEACD1524ABD1007E0610 /* ITImageField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITImageField.m; sourceTree = "<group>"; };
 		627FEAD11525D109007E0610 /* ITButtonField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITButtonField.h; sourceTree = "<group>"; };
@@ -234,6 +238,8 @@
 				048C414414FD2258003CF36E /* ITFormContainerView.h */,
 				048C412514FCFDDE003CF36E /* ITScrollForm.h */,
 				048C412614FCFDDE003CF36E /* ITScrollForm.m */,
+				62199FC7152B45B200BBD656 /* ITFieldSet.h */,
+				62199FC8152B45B200BBD656 /* ITFieldSet.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -273,6 +279,7 @@
 				046B411E1506567C0081D252 /* ITCounterField.h in Headers */,
 				627FEACE1524ABD1007E0610 /* ITImageField.h in Headers */,
 				627FEAD31525D10A007E0610 /* ITButtonField.h in Headers */,
+				62199FC9152B45B200BBD656 /* ITFieldSet.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +406,7 @@
 				046B411F1506567C0081D252 /* ITCounterField.m in Sources */,
 				627FEACF1524ABD1007E0610 /* ITImageField.m in Sources */,
 				627FEAD41525D10A007E0610 /* ITButtonField.m in Sources */,
+				62199FCA152B45B200BBD656 /* ITFieldSet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

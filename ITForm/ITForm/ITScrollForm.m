@@ -2,13 +2,13 @@
 //  ITScrollForm.m
 //  ITForm
 //
-//  Created by mc816 on 28.02.12.
 //  Copyright (c) 2012 ITC. All rights reserved.
 //
 
 #import "ITScrollForm.h"
 #import "ITFormManager.h"
 #import "ITField.h"
+#import "ITFieldSet.h"
 
 @interface ITScrollForm()
 
@@ -32,6 +32,21 @@
 {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
     [super dealloc];
+}
+
+
+- (void)addFieldSet:(ITFieldSet*)fieldSet
+{
+    float height = [self contentHeight];
+    
+    CGSize contentSize = [self contentSize];
+    fieldSet.frame = CGRectMake(0, height, self.bounds.size.width, fieldSet.frame.size.height);
+    height += fieldSet.frame.size.height;
+    [self addSubview:fieldSet];
+    [fieldSet viewDidAddedToForm];
+    contentSize.height = height;
+    self.contentSize = contentSize;
+    subviewsChanged = YES;
 }
 
 - (void)addField:(ITField*)field
@@ -78,7 +93,7 @@
         float height = 0;
         float width = self.frame.size.width;
         for (UIView *subView in self.subviews) {
-            if ([subView isKindOfClass:[ITField class]]) {
+            if ([subView isKindOfClass:[ITField class]] || [subView isKindOfClass:[ITFieldSet class]]) {
                 CGRect frame = subView.frame;
                 frame.origin.y = height;
                 frame.origin.x = 0;
@@ -103,15 +118,15 @@
 - (void)keyboardWillShow:(NSNotification*)notification
 {
     /*
-    oldOffset = self.contentOffset;
-    CGPoint pt;
-    CGRect rc = [[formManager respondedField] bounds];
-    rc = [[formManager respondedField] convertRect:rc toView:self];
-    pt = rc.origin;
-    pt.x = 0;
-    pt.y -= 60;
-    [self setContentOffset:pt animated:YES];
-    */
+     oldOffset = self.contentOffset;
+     CGPoint pt;
+     CGRect rc = [[formManager respondedField] bounds];
+     rc = [[formManager respondedField] convertRect:rc toView:self];
+     pt = rc.origin;
+     pt.x = 0;
+     pt.y -= 60;
+     [self setContentOffset:pt animated:YES];
+     */
     
     
     
@@ -130,6 +145,9 @@
 
 - (void)keyboardWillHide:(NSNotification*)notification
 {
+    UIEdgeInsets contentInsets = UIEdgeInsetsZero;
+    self.contentInset = contentInsets;
+    self.scrollIndicatorInsets = contentInsets;
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
@@ -140,19 +158,19 @@
 - (void)restoreNoKeyboardPosition
 {
     /*
-    CGPoint offset = oldOffset;
-    if (offset.y < 0) {
-        offset.y = 0;
-    }
-    if (self.contentSize.height > self.bounds.size.height) {
-        if (offset.y > self.contentSize.height-self.bounds.size.height) {
-            offset.y = self.contentSize.height-self.bounds.size.height;
-        }
-    } else {
-        offset.y = 0;
-    }
-    [self setContentOffset:offset animated:YES];
-    */
+     CGPoint offset = oldOffset;
+     if (offset.y < 0) {
+     offset.y = 0;
+     }
+     if (self.contentSize.height > self.bounds.size.height) {
+     if (offset.y > self.contentSize.height-self.bounds.size.height) {
+     offset.y = self.contentSize.height-self.bounds.size.height;
+     }
+     } else {
+     offset.y = 0;
+     }
+     [self setContentOffset:offset animated:YES];
+     */
     
     UIEdgeInsets contentInsets = UIEdgeInsetsZero;
     self.contentInset = contentInsets;

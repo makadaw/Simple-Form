@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "ITFormContainerView.h"
 #import "ITFieldResponderDelegate.h"
+#import "ITFieldSet.h"
 
 @class ITFormManager, ITField;
 
@@ -17,10 +18,12 @@
 }
 
 @property (readonly, retain) NSMutableArray *fields;
+@property (readonly, retain) NSMutableArray *fieldSets;
 @property (readonly, retain) id<ITFormContainerView> contentManager;
 
 - (id)initWithContentManager:(id<ITFormContainerView>)ctManager;
 - (void)addField:(ITField*)field;
+- (void)addFieldSet:(ITFieldSet*)fieldSet;
 
 - (ITField*)fieldByName:(NSString*)fieldName;
 

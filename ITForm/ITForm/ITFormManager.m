@@ -17,6 +17,7 @@
 
 @implementation ITFormManager
 @synthesize fields;
+@synthesize fieldSets;
 @synthesize contentManager;
 
 - (id)init
@@ -24,6 +25,7 @@
     self = [super init];
     if (self) {
         fields = [[NSMutableArray alloc] init];
+        fieldSets = [[NSMutableArray alloc] init];
     }
     return self;
 }
@@ -41,6 +43,7 @@
 - (void)dealloc
 {
     [fields release];
+    [fieldSets release];
     [contentManager release];
     [super dealloc];
 }
@@ -51,6 +54,16 @@
     [fields addObject:field];
     field.responderDelegate = self;
     [contentManager addField:field];
+}
+
+
+- (void)addFieldSet:(ITFieldSet*)fieldSet
+{
+    [self.fieldSets addObject:fieldSet];
+    for (ITField *field in fieldSet.fields) {
+        [fields addObject:field];
+    }
+    [contentManager addFieldSet:fieldSet];
 }
 
 
@@ -127,8 +140,8 @@
 {
     editingField = field;
     
-    CGRect fieldRealFrame = [(UIScrollView*)contentManager convertRect:field.frame fromView:field.superview];
-    [(UIScrollView*)contentManager scrollRectToVisible:fieldRealFrame animated:YES];
+    //CGRect fieldRealFrame = [(UIScrollView*)contentManager convertRect:field.frame fromView:field.superview];
+    //[(UIScrollView*)contentManager scrollRectToVisible:fieldRealFrame animated:YES];
 }
 
 - (void)endEditingField:(ITField*)field
@@ -145,16 +158,16 @@
             break;
         }
     }
-    if (!switched) {
-        [contentManager restoreNoKeyboardPosition];
-    }
+    //if (!switched) {
+    //    [contentManager restoreNoKeyboardPosition];
+    //}
 }
 
 - (void)hideKeyBoard
 {
     [editingField resignFirstResponder];
     editingField = nil;
-    [contentManager restoreNoKeyboardPosition];
+    //[contentManager restoreNoKeyboardPosition];
 }
 
 
