@@ -12,12 +12,15 @@
 @interface ITFormManager()
 
 @property (readwrite, retain) NSArray *fields;
+@property (readwrite, retain) NSArray *fieldSets;
+@property (readwrite, retain) NSArray *items;
 
 @end
 
 @implementation ITFormManager
 @synthesize fields;
 @synthesize fieldSets;
+@synthesize items;
 @synthesize contentManager;
 
 - (id)init
@@ -26,6 +29,7 @@
     if (self) {
         fields = [[NSMutableArray alloc] init];
         fieldSets = [[NSMutableArray alloc] init];
+        items = [[NSMutableArray alloc] init];
     }
     return self;
 }
@@ -44,6 +48,7 @@
 {
     [fields release];
     [fieldSets release];
+    [items release];
     [contentManager release];
     [super dealloc];
 }
@@ -52,6 +57,7 @@
 - (void)addField:(ITField*)field
 {
     [fields addObject:field];
+    [items addObject:field];
     field.responderDelegate = self;
     [contentManager addField:field];
 }
@@ -59,7 +65,10 @@
 
 - (void)addFieldSet:(ITFieldSet*)fieldSet
 {
-    [self.fieldSets addObject:fieldSet];
+    [fieldSets addObject:fieldSet];
+    [items addObject:fieldSet];
+    fieldSet.formManager = self;
+    
     for (ITField *field in fieldSet.fields) {
         [fields addObject:field];
     }
@@ -81,6 +90,22 @@
         field = [self.fields objectAtIndex:index];
     }
     return field;
+}
+
+- (ITFieldSet*)fieldSetByName:(NSString*)fieldSetName
+{
+    NSUInteger index = [self.fieldSets indexOfObjectPassingTest:^BOOL(id obj, NSUInteger idx, BOOL *stop){
+        ITFieldSet *f = (ITFieldSet*)obj;
+        if ([f.name isEqualToString:fieldSetName]) {
+            *stop = YES;
+        }
+        return *stop;
+    }];
+    ITFieldSet *fieldSet = nil;
+    if (index != NSNotFound) {
+        fieldSet = [self.fieldSets objectAtIndex:index];
+    }
+    return fieldSet;
 }
 
 //Validation and data part

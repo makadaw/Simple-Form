@@ -19,6 +19,7 @@
 
 @property (readonly, retain) NSMutableArray *fields;
 @property (readonly, retain) NSMutableArray *fieldSets;
+@property (readonly, retain) NSMutableArray *items;
 @property (readonly, retain) id<ITFormContainerView> contentManager;
 
 - (id)initWithContentManager:(id<ITFormContainerView>)ctManager;
@@ -26,6 +27,7 @@
 - (void)addFieldSet:(ITFieldSet*)fieldSet;
 
 - (ITField*)fieldByName:(NSString*)fieldName;
+- (ITFieldSet*)fieldSetByName:(NSString*)fieldSetName;
 
 - (ITField*)respondedField;
 
