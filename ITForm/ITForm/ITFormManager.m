@@ -108,6 +108,17 @@
     return fieldSet;
 }
 
+#pragma mark - Reseting
+
+- (void)reset
+{
+    for (ITField *field in self.fields) {
+        [field reset];
+    }
+    UIScrollView *cm = (UIScrollView*)self.contentManager;
+    [cm setContentOffset:CGPointMake(0, 0) animated:NO];
+}
+
 //Validation and data part
 - (BOOL)validateForm:(NSError **)error
 {

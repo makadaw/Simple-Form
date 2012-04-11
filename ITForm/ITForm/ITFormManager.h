@@ -31,6 +31,7 @@
 
 - (ITField*)respondedField;
 
+- (void)reset;
 - (BOOL)validateForm:(NSError **)error;
 - (NSDictionary*)formValues;
 - (void)setFormValues:(NSDictionary*)data;

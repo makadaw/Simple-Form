@@ -83,6 +83,16 @@
     return @"";
 }
 
+#pragma mark - Reset
+
+-(void)reset
+{
+    //NSAssert(YES, @"Implement in child classes");
+    
+    [self hideErrorView];
+    [self setFieldValue:nil];
+}
+
 #pragma mark - Touches
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {

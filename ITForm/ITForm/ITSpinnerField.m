@@ -81,4 +81,10 @@
     }
 }
 
+-(void)reset
+{
+    [self hideErrorView];
+    [self setSelectedItem:nil];
+}
+
 @end

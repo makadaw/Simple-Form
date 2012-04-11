@@ -32,6 +32,7 @@
 - (void)setFieldValue:(NSString *)newValue;
 - (NSString *)fieldValue;
 
+- (void)reset;
 - (BOOL)validate:(NSError **)error;
 - (UIView*)errorView;
 - (void)showErrorView;
