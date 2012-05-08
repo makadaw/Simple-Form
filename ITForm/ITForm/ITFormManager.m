@@ -142,7 +142,7 @@
 {
     NSMutableDictionary *tmpData = [[NSMutableDictionary alloc] init];
     for (ITField *field in self.fields) {
-        if (field.isEditable && !field.isHidden) {
+        if (field.editable && !field.isHidden) {
             NSString *v = [field fieldValue];
             if (v == nil) {
                 [tmpData setObject:@"" forKey:field.fieldName];

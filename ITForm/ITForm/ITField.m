@@ -14,7 +14,7 @@
 @end
 
 @implementation ITField
-@synthesize fieldName, editable;
+@synthesize fieldName, editable = _editable;
 @synthesize responderDelegate, delegate;
 @synthesize validatorsList;
 

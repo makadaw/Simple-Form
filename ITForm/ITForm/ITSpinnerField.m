@@ -18,6 +18,7 @@
 @synthesize valueKey, displayKey;
 @synthesize dataSelect;
 @synthesize spinnerButton, titleLabel;
+@synthesize editable = _editable;
 
 - (void)dealloc
 {
@@ -85,6 +86,16 @@
 {
     [self hideErrorView];
     [self setSelectedItem:nil];
+}
+
+- (void)setEditable:(BOOL)editable
+{
+    _editable = editable;
+    if (editable == NO) {
+        self.spinnerButton.enabled = NO;
+    } else {
+        self.spinnerButton.enabled = YES;
+    }
 }
 
 @end

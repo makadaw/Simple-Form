@@ -19,7 +19,7 @@
 @property (nonatomic, retain) NSString *fieldName;
 @property (assign) id<ITFieldResponderDelegate> responderDelegate;
 @property (assign) id<ITFieldDelegate> delegate;
-@property (nonatomic, getter = isEditable) BOOL editable;
+@property (nonatomic) BOOL editable;
 
 @property (readonly, assign) NSMutableArray *validatorsList;
 
